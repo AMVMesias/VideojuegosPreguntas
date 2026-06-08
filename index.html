@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo de Videojuegos - Estudio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #e94560;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .subtitle {
+            color: #a8a8a8;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+        }
+
+        .options {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .option-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid rgba(233, 69, 96, 0.3);
+            border-radius: 15px;
+            padding: 2rem 3rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+            min-width: 200px;
+        }
+
+        .option-card:hover {
+            background: rgba(233, 69, 96, 0.1);
+            border-color: #e94560;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.2);
+        }
+
+        .option-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .option-card p {
+            color: #a8a8a8;
+            font-size: 0.9rem;
+        }
+
+        .parcial-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #e94560;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Desarrollo de Videojuegos</h1>
+        <p class="subtitle">Selecciona el parcial que deseas estudiar</p>
+        
+        <div class="options">
+            <a href="2do-parcial/" class="option-card">
+                <span class="parcial-number">2do</span>
+                <h2>Segundo Parcial</h2>
+                <p>Material y preguntas</p>
+            </a>
+            
+            <a href="3er-parcial/" class="option-card">
+                <span class="parcial-number">3ro</span>
+                <h2>Tercer Parcial</h2>
+                <p>Material y preguntas</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
