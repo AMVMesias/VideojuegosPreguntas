@@ -4,103 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo de Videojuegos - Estudio</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .container {
-            text-align: center;
-            padding: 2rem;
-        }
-
-        h1 {
-            color: #e94560;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .subtitle {
-            color: #a8a8a8;
-            font-size: 1.2rem;
-            margin-bottom: 3rem;
-        }
-
-        .options {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .option-card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 2px solid rgba(233, 69, 96, 0.3);
-            border-radius: 15px;
-            padding: 2rem 3rem;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: white;
-            min-width: 200px;
-        }
-
-        .option-card:hover {
-            background: rgba(233, 69, 96, 0.1);
-            border-color: #e94560;
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(233, 69, 96, 0.2);
-        }
-
-        .option-card h2 {
-            font-size: 1.8rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .option-card p {
-            color: #a8a8a8;
-            font-size: 0.9rem;
-        }
-
-        .parcial-number {
-            font-size: 3rem;
-            font-weight: bold;
-            color: #e94560;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-    </style>
+    <link rel="stylesheet" href="2do-parcial/assets/quiz.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Desarrollo de Videojuegos</h1>
-        <p class="subtitle">Selecciona el parcial que deseas estudiar</p>
-        
-        <div class="options">
-            <a href="2do-parcial/" class="option-card">
-                <span class="parcial-number">2do</span>
-                <h2>Segundo Parcial</h2>
-                <p>Material y preguntas</p>
-            </a>
-            
-            <a href="3er-parcial/" class="option-card">
-                <span class="parcial-number">3ro</span>
-                <h2>Tercer Parcial</h2>
-                <p>Material y preguntas</p>
-            </a>
-        </div>
-    </div>
+    <main class="page-shell">
+        <section class="hero">
+            <div>
+                <span class="eyebrow">Estudio</span>
+                <h1>Desarrollo de Videojuegos</h1>
+                <p class="subtitle">Centro de estudio por parciales. Cada parcial puede tener su material, bloques de preguntas y navegación propia desde esta única página principal.</p>
+                <div class="top-actions">
+                    <a class="button primary" href="#parcial-2">Practicar 2do parcial</a>
+                    <a class="button" href="#parciales">Ver parciales</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="parciales">
+            <div class="section-head">
+                <div>
+                    <h2>Parciales</h2>
+                    <p class="muted">Entrada general para crecer sin cambiar el archivo principal de GitHub Pages.</p>
+                </div>
+            </div>
+
+            <div class="grid">
+                <a class="card" href="#parcial-2">
+                    <span class="badge">Disponible</span>
+                    <h3>Segundo parcial</h3>
+                    <p>Clase 04: videojuego a usuario, interfaz, sonido y feedback. Incluye 169 preguntas de selección.</p>
+                </a>
+                <a class="card" href="#parcial-3">
+                    <span class="badge">Preparado</span>
+                    <h3>Tercer parcial</h3>
+                    <p>Sección lista para agregar material y preguntas cuando estén cargados los archivos.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="parcial-2">
+            <div class="section-head">
+                <div>
+                    <h2>Segundo parcial</h2>
+                    <p class="muted">Preguntas basadas en Clase 04. Solo selección: multiple choice y verdadero/falso.</p>
+                </div>
+                <a class="button" href="2do-parcial/material/dvj-clase04-Videojuego-jugador-Interfaz.md">Abrir material</a>
+            </div>
+
+            <div class="bloques-grid">
+                <a href="2do-parcial/preguntas/clase04-interfaz/bloque1-videojuego-usuario.html" class="bloque-card">
+                    <span class="badge">Bloque 1</span>
+                    <h3>Videojuego a usuario</h3>
+                    <p>Pantalla, canales de comunicación y elementos visuales principales.</p>
+                </a>
+                <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-1-introduccion.html" class="bloque-card">
+                    <span class="badge">Bloque 2.1</span>
+                    <h3>Interfaz y planificación</h3>
+                    <p>Aspectos de la interfaz, preguntas de diseño y diagramas de flujo.</p>
+                </a>
+                <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-2-hud.html" class="bloque-card">
+                    <span class="badge">Bloque 2.2</span>
+                    <h3>HUD</h3>
+                    <p>Heads-Up Display, información necesaria y organización en pantalla.</p>
+                </a>
+                <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-3-principios.html" class="bloque-card">
+                    <span class="badge">Bloque 2.3</span>
+                    <h3>Principios básicos</h3>
+                    <p>Punto de atención, movimiento del ojo, color, balance y texto.</p>
+                </a>
+                <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-4-controles.html" class="bloque-card">
+                    <span class="badge">Bloque 2.4</span>
+                    <h3>Controles</h3>
+                    <p>Sliders, toggles, radio buttons, listas e ingreso de texto.</p>
+                </a>
+                <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-5-patrones.html" class="bloque-card">
+                    <span class="badge">Bloque 2.5</span>
+                    <h3>Patrones de usabilidad</h3>
+                    <p>Shield, State, cancelación, magnetismo, Focus y Progress.</p>
+                </a>
+                <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-6-gestalt.html" class="bloque-card">
+                    <span class="badge">Bloque 2.6</span>
+                    <h3>Diseño gráfico y Gestalt</h3>
+                    <p>Formas, color, percepción y leyes de la Gestalt.</p>
+                </a>
+                <a href="2do-parcial/preguntas/clase04-interfaz/bloque3-sonido.html" class="bloque-card">
+                    <span class="badge">Bloque 3</span>
+                    <h3>Sonido</h3>
+                    <p>Tipos de sonido, importancia y buenas prácticas.</p>
+                </a>
+                <a href="2do-parcial/preguntas/clase04-interfaz/bloque4-feedback.html" class="bloque-card">
+                    <span class="badge">Bloque 4</span>
+                    <h3>Feedback</h3>
+                    <p>Tipos, características y razones por las que mejora la jugabilidad.</p>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Material del segundo parcial</h2>
+            <div class="grid">
+                <a class="card" href="2do-parcial/material/dvj-clase04-Videojuego-jugador-Interfaz.md">
+                    <span class="badge">Markdown</span>
+                    <h3>Clase 04 - Videojuego a usuario</h3>
+                    <p>Archivo base usado para ordenar y revisar las preguntas.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="parcial-3">
+            <div class="section-head">
+                <div>
+                    <h2>Tercer parcial</h2>
+                    <p class="muted">Espacio reservado para mantener la misma estructura cuando agregues contenido.</p>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <span class="badge">Pendiente</span>
+                    <h3>Material</h3>
+                    <p>Aún no hay archivos de material dentro de `3er-parcial`.</p>
+                </div>
+                <div class="card">
+                    <span class="badge">Pendiente</span>
+                    <h3>Preguntas</h3>
+                    <p>Cuando existan preguntas, se agregan aquí como bloques igual que en el segundo parcial.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

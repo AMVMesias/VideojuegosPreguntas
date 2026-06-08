@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 2.5 - Patrones de usabilidad</title>
+    <link rel="stylesheet" href="../../assets/quiz.css">
+</head>
+<body>
+    <div class="score-bar">
+        <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
+        <span style="color:#a8a8a8;font-size:0.85rem;">Selecciona una opción para validar</span>
+    </div>
+    <div class="container">
+        <a href="../../../index.html#parcial-2" class="back">Volver al inicio</a>
+        <h1>Bloque 2.5: Patrones de usabilidad para videojuegos</h1>
+        <p style="color:#a8a8a8;margin:1rem 0;">Páginas 29-35 del material.</p>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>Los patrones de usabilidad, como todo patrón, describen:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Reglas de programación</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Problemas recurrentes, sugieren buenas prácticas y brindan soluciones</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Modelos 3D de personajes</button></li>
+                <li><button class="opt-btn" data-opt="d">d) La historia del juego</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>Los patrones de usabilidad se enfocan en mejorar la satisfacción del usuario cuando utiliza el sistema.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Shield</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El patrón Shield es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Un escudo visual del personaje</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Una capa proactiva que previene que el jugador active accidentalmente una función</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Un tipo de sonido</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Una técnica de modelado 3D</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>Según Shield, para activar por equivocación una acción se requieren:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Cero errores</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Dos errores</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Un solo error</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Tres errores</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="false" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>El patrón Shield ejecuta la acción al primer error del usuario, sin pedir confirmación.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>State</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El patrón State:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Guarda partidas en la nube</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Brinda pistas visuales al usuario de su actual estado</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Es un motor gráfico</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Cambia la dificultad del juego</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>Un ejemplo del patrón State mencionado en el material es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Cambiar la música según la zona</button></li>
+                <li><button class="opt-btn" data-opt="b">b) La imagen del cursor del mouse según lo que el personaje está haciendo</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Mostrar un mapa al iniciar</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Guardar la partida automáticamente</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>En el patrón State, la cantidad de estados posibles debe ser pequeña y las representaciones simbólicas claramente distinguibles.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Automatic Mode Cancellation</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El patrón Automatic Mode Cancellation:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Cancela el juego automáticamente</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Plantea la posibilidad de cancelar la actual secuencia de operaciones ejecutadas</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Es un tipo de slider</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Reproduce música automática</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El ejemplo del material para Automatic Mode Cancellation es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Un juego de puzzles</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Un juego de carreras</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Un juego de estrategia donde se cancela la orden de ataque de una unidad a una posición</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Un juego de fútbol</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Magnetismo</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El patrón Magnetismo se utiliza cuando:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Hay mucho oro en pantalla</button></li>
+                <li><button class="opt-btn" data-opt="b">b) El jugador necesita acciones de movimiento precisas</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Se apaga la pantalla</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Se cambia de nivel</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>En el patrón Magnetismo con mouse, si el cursor está muy cerca de una unidad, el sistema:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Lo aleja de la unidad</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Lo lleva de forma automática al elemento</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Cierra el juego</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Cambia la dificultad</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>El material sugiere que la funcionalidad de magnetismo sea opcional.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Focus</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El patrón Focus es útil cuando:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Hay que desenfocar la imagen</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Se necesita que el usuario se concentre en una pieza específica e ignore el resto</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Se quiere distraer al jugador</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Hay que cargar un nivel</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El ejemplo del material para Focus es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Mostrar todos los menús a la vez</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Un juego de fútbol donde al establecer la táctica del equipo se muestra solo un campo y los jugadores</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Un tutorial extenso</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Un inventario con todos los objetos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Progress</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El patrón Progress sirve principalmente para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Subir de nivel al personaje</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Desplegar información cuantitativa del progreso de una acción para que el jugador vea el avance</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Mostrar la historia del juego</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Cambiar el idioma</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El material menciona como ejemplos de Progress:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Diálogos del personaje</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Barras de carga y barras de salud/energía</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Mapas de niveles</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Lista de enemigos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>El patrón Progress ayuda a que el jugador no se ponga nervioso por no saber lo que está pasando.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="final-result" id="finalResult">
+            <h3>Resultado final del Bloque 2.5 - Patrones</h3>
+            <div class="big" id="finalScore"></div>
+            <p id="finalMsg"></p>
+            <button class="reset-btn" onclick="location.reload()">Reintentar bloque</button>
+        </div>
+
+        <p style="margin-top:2rem;">
+            <a href="bloque2-4-controles.html" class="nav">← Anterior: Bloque 2.4</a> ·
+            <a href="bloque2-6-gestalt.html" class="nav">→ Siguiente: Bloque 2.6 - Gestalt</a>
+        </p>
+    </div>
+    <script src="../../assets/quiz.js"></script>
+</body>
+</html>
+
+

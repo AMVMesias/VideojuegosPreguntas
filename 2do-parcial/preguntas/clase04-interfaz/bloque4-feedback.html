@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 4 - Feedback</title>
+    <link rel="stylesheet" href="../../assets/quiz.css">
+</head>
+<body>
+    <div class="score-bar">
+        <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
+        <span style="color:#a8a8a8;font-size:0.85rem;">Selecciona una opción para validar</span>
+    </div>
+    <div class="container">
+        <a href="../../../index.html#parcial-2" class="back">Volver al inicio</a>
+        <h1>Bloque 4: Feedback</h1>
+        <p style="color:#a8a8a8;margin:1rem 0;">Páginas 69-72 del material.</p>
+
+        <h2>Definición</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El feedback es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Un tipo de gráfico</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Toda respuesta del sistema hacia el jugador para confirmar o reaccionar a una acción</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Un motor de sonido</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Un manual de usuario</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El feedback es crucial para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) La facturación del estudio</button></li>
+                <li><button class="opt-btn" data-opt="b">b) La marca del juego</button></li>
+                <li><button class="opt-btn" data-opt="c">c) La jugabilidad, ya que permite al jugador entender si sus acciones fueron reconocidas</button></li>
+                <li><button class="opt-btn" data-opt="d">d) La duración de la campaña publicitaria</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>Sin feedback, el jugador no sabría si su acción fue reconocida, exitosa, fallida o relevante.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Tipos de feedback</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuántos tipos de feedback menciona el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) 3</button></li>
+                <li><button class="opt-btn" data-opt="b">b) 5</button></li>
+                <li><button class="opt-btn" data-opt="c">c) 7</button></li>
+                <li><button class="opt-btn" data-opt="d">d) 10</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El feedback Visual es lo que:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Suena al recibir daño</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Cambia en la pantalla tras una acción (ej.: pantalla tiembla al recibir daño)</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Vibra al chocar</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Dice un NPC</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El feedback Sonoro se asocia a la acción. Un ejemplo del material es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Pantalla tiembla</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Sonido metálico al recoger una moneda</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Vibración al chocar contra una pared</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Botón se resalta</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El feedback Háptico es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Un cambio visual</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Vibración o fuerza física sobre el dispositivo (ej.: vibración al chocar contra una pared)</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Un diálogo del NPC</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Un cambio en el menú</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El feedback de UI (Interfaz) implica:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Vibración del dispositivo</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Cambios en botones, menús o indicadores (ej.: botón se resalta al pasar el cursor)</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo efectos de sonido</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo cinemáticas</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El feedback Narrativo es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Un cambio de color en pantalla</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Reacción de personajes o del mundo (ej.: un NPC dice "¡Gracias!" tras ayudarlo)</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Una vibración del mando</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Un cambio de nivel</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál es la correspondencia correcta entre tipo de feedback y ejemplo?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Visual = vibración; Sonoro = moneda; Háptico = tiembla</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Visual = tiembla; Sonoro = moneda; Háptico = vibración; UI = botón resaltado; Narrativo = NPC</button></li>
+                <li><button class="opt-btn" data-opt="c">c) UI = NPC; Narrativo = vibración; Sonoro = tiembla</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Háptico = moneda; Visual = NPC</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="false" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>La vibración al chocar contra una pared es un ejemplo de feedback sonoro.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Características de un buen feedback</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuántas características de un buen feedback menciona el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) 2</button></li>
+                <li><button class="opt-btn" data-opt="b">b) 4</button></li>
+                <li><button class="opt-btn" data-opt="c">c) 6</button></li>
+                <li><button class="opt-btn" data-opt="d">d) 8</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>Las 4 características de un buen feedback son:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Lento, ruidoso, confuso, exagerado</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Inmediato, consistente, comprensible y adecuado al contexto</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Caro, bonito, largo, corto</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Visual, sonoro, háptico, UI</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>Un feedback "Inmediato":</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Aparece varios minutos después</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Reacciona en el mismo momento</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo aparece al morir</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Es opcional</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>Un feedback "Consistente":</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Cambia cada vez</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Se repite con coherencia ante la misma acción</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo aparece una vez</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Es aleatorio</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>Un feedback "Adecuado al contexto" no es exagerado ni demasiado sutil.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>¿Por qué es importante?</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuántas razones de importancia del feedback menciona el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) 2</button></li>
+                <li><button class="opt-btn" data-opt="b">b) 4</button></li>
+                <li><button class="opt-btn" data-opt="c">c) 6</button></li>
+                <li><button class="opt-btn" data-opt="d">d) 8</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>Las 4 razones de importancia del feedback son:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Marca, precio, venta, publicidad</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Confirmación de acciones, sensación de control, orientación en el gameplay, refuerzo emocional</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Música, efectos, voz, silencio</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Inmediato, consistente, comprensible, sutil</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>El feedback genera sensación de control porque el juego reacciona a las acciones del jugador.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="final-result" id="finalResult">
+            <h3>Resultado final del Bloque 4 - Feedback</h3>
+            <div class="big" id="finalScore"></div>
+            <p id="finalMsg"></p>
+            <button class="reset-btn" onclick="location.reload()">Reintentar bloque</button>
+        </div>
+
+        <p style="margin-top:2rem;">
+            <a href="bloque3-sonido.html" class="nav">← Anterior: Bloque 3 - Sonido</a> ·
+            <a href="../../../index.html#parcial-2" class="nav">Volver al inicio</a>
+        </p>
+    </div>
+    <script src="../../assets/quiz.js"></script>
+</body>
+</html>
+
+

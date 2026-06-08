@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 2.2 - HUD (Heads-Up Display)</title>
+    <link rel="stylesheet" href="../../assets/quiz.css">
+</head>
+<body>
+    <div class="score-bar">
+        <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
+        <span style="color:#a8a8a8;font-size:0.85rem;">Selecciona una opción para validar</span>
+    </div>
+    <div class="container">
+        <a href="../../../index.html#parcial-2" class="back">Volver al inicio</a>
+        <h1>Bloque 2.2: HUD (Heads-Up Display)</h1>
+        <p style="color:#a8a8a8;margin:1rem 0;">Páginas 14-16 del material.</p>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué significa HUD?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Heads-Up Display</button></li>
+                <li><button class="opt-btn" data-opt="b">b) High User Definition</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Heat Unit Display</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Hide Under Display</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El HUD es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) El menú de configuración del sistema operativo</button></li>
+                <li><button class="opt-btn" data-opt="b">b) El sistema de menú que aparece dentro del juego, mientras el usuario juega</button></li>
+                <li><button class="opt-btn" data-opt="c">c) El panel externo de la consola</button></li>
+                <li><button class="opt-btn" data-opt="d">d) El manual del juego</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>Según el material, el HUD debe:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Ocupar la mayor parte de la pantalla</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Ocupar el menor tamaño posible en pantalla</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Cubrir completamente la escena</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Tener colores estridentes</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>El HUD debe desplegar:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Toda la información del juego</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Información que el jugador necesite conocer mientras juega y no debe distraerlo</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo el puntaje</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo el inventario</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="d" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál de los siguientes es un ejemplo de información que puede aparecer en el HUD según el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Inventario</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Mapas</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Vidas</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Todas las anteriores</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>¿Por qué es importante organizar bien el HUD?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Para ocupar más espacio y mostrar más cosas</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Para que ocupe el menor tamaño posible y no distraiga al jugador</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Para decorar la pantalla</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Para confundir al enemigo</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="false" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>El HUD aparece solo cuando el jugador pausa el juego.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="false" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>El HUD debe distraer al jugador para mantenerlo alerta.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>El material sugiere varias organizaciones posibles para el HUD, mostradas en 4 cuadros con barras, puntos o indicadores en bordes y esquinas.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="false" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>Cuanta más información muestre el HUD, mejor será la experiencia del jugador.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+
+
+        <div class="final-result" id="finalResult">
+            <h3>Resultado final del Bloque 2.2 - HUD</h3>
+            <div class="big" id="finalScore"></div>
+            <p id="finalMsg"></p>
+            <button class="reset-btn" onclick="location.reload()">Reintentar bloque</button>
+        </div>
+
+        <p style="margin-top:2rem;">
+            <a href="bloque2-1-introduccion.html" class="nav">← Anterior: Bloque 2.1</a> ·
+            <a href="bloque2-3-principios.html" class="nav">→ Siguiente: Bloque 2.3 - Principios de diseño</a>
+        </p>
+    </div>
+    <script src="../../assets/quiz.js"></script>
+</body>
+</html>
+
+

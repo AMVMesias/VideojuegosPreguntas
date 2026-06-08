@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 2.4 - Tipos de controles</title>
+    <link rel="stylesheet" href="../../assets/quiz.css">
+</head>
+<body>
+    <div class="score-bar">
+        <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
+        <span style="color:#a8a8a8;font-size:0.85rem;">Selecciona una opción para validar</span>
+    </div>
+    <div class="container">
+        <a href="../../../index.html#parcial-2" class="back">Volver al inicio</a>
+        <h1>Bloque 2.4: Tipos de controles</h1>
+        <p style="color:#a8a8a8;margin:1rem 0;">Páginas 25-28 del material.</p>
+
+        <h2>Sliders</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>¿Para qué sirven los sliders?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Para activar/desactivar opciones</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Para ajustar valores como dificultad del juego, volumen, etc.</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Para escribir texto</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Para mostrar listas</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>Sobre la apariencia de los sliders, el material afirma que:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Siempre lucen iguales</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Puede haber variantes en la apariencia, pero el comportamiento es el mismo</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo existen en una forma</button></li>
+                <li><button class="opt-btn" data-opt="d">d) No pueden tener variantes</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>Un slider es útil, por ejemplo, para ajustar el volumen del juego.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Toggle Switches y Radio Buttons</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>Los Toggle Switches se utilizan cuando una opción:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Tiene muchos valores</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Tiene dos estados (activada o desactivada)</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Es una lista larga</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Es texto a ingresar</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>Los radio buttons:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Permiten activar varias opciones a la vez</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Están asociados a un grupo de opciones de las cuales solo una puede estar activa</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Sirven para escribir texto</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Ajustan el volumen</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="false" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>Un toggle switch puede tener más de dos estados.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="false" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>En un grupo de radio buttons se puede tener más de una opción activa al mismo tiempo.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál es la relación correcta entre control y uso?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Slider = activar/desactivar; Toggle = elegir una; Radio buttons = ajustar valores</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Slider = ajustar valores continuos; Toggle = activar/desactivar; Radio buttons = elegir una opción del grupo</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Los tres hacen lo mismo</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Slider = escribir texto; Toggle = listas; Radio buttons = colores</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>List (Listas)</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>Una List (lista):</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Permite marcar todas las opciones</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Despliega un conjunto de opciones posibles de las cuales se puede marcar solo una</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Sirve para escribir texto</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Es lo mismo que un slider</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>La forma de desplegar la lista puede ser:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Solo vertical</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Solo horizontal</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Horizontal, vertical u otras variantes</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo en diagonal</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>Sobre la opción seleccionada en una lista, el material recomienda:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Que se vea igual que las demás</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Que sea visualizada de forma especial (iluminada, con icono adjunto, etc.)</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Que se oculte</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Que esté tachada</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>La forma de recorrer la lista debe ser fácilmente deducible para el usuario.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Input text</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuándo es común ofrecer un input text al jugador?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Nunca</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Cuando necesita ingresar datos como su nombre para un ranking de puntos</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo en juegos 2D</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo para cambiar volumen</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="1">
+            <div class="q-text"><span class="tipo">MC</span>Al ofrecer un input text, se debe considerar:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) El color del personaje</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Con qué dispositivo el jugador ingresará sus datos (teclado, mouse, joystick)</button></li>
+                <li><button class="opt-btn" data-opt="c">c) La resolución de pantalla</button></li>
+                <li><button class="opt-btn" data-opt="d">d) La dificultad del juego</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>El input text es útil, por ejemplo, para que el jugador ingrese su nombre y figure en un ranking.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="final-result" id="finalResult">
+            <h3>Resultado final del Bloque 2.4 - Controles</h3>
+            <div class="big" id="finalScore"></div>
+            <p id="finalMsg"></p>
+            <button class="reset-btn" onclick="location.reload()">Reintentar bloque</button>
+        </div>
+
+        <p style="margin-top:2rem;">
+            <a href="bloque2-3-principios.html" class="nav">← Anterior: Bloque 2.3</a> ·
+            <a href="bloque2-5-patrones.html" class="nav">→ Siguiente: Bloque 2.5 - Patrones</a>
+        </p>
+    </div>
+    <script src="../../assets/quiz.js"></script>
+</body>
+</html>
+
+
