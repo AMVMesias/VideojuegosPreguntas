@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloque 7 - Herramientas de comunicación en juegos de red</title>
-    <link rel="stylesheet" href="../../assets/quiz.css">
+    <link rel="stylesheet" href="../../assets/quiz.css?v=4">
 </head>
-<body>
+<body class="network-quiz">
     <div class="score-bar">
         <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
         <span style="color:#a8a8a8;font-size:0.85rem;">Selecciona una opción para validar</span>
@@ -253,6 +253,173 @@
                 <li><button class="opt-btn" data-opt="b">b) Proyectos educativos, indies, 2D, prototipos y juegos con control propio del servidor</button></li>
                 <li><button class="opt-btn" data-opt="c">c) Solo juegos AAA</button></li>
                 <li><button class="opt-btn" data-opt="d">d) Únicamente juegos móviles</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Herramientas adicionales</h2>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué herramienta externa de VoIP se menciona en el material para chat de voz en juegos multijugador?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Slack</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Teams</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Discord</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Zoom</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>FishNet, según el material, es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Un motor gráfico</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Una solución gratuita y open source para Unity, orientada a rendimiento y flexibilidad</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Una herramienta de Godot</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Una librería de física</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>PlayFab se menciona en el material como ejemplo de:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Middleware de red, junto a Photon y Unity Multiplayer</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Motor gráfico 2D</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Protocolo de capa de aplicación</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Herramienta de modelado</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Las CDN (Content Delivery Network) se utilizan para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Generar modelos 3D</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Mejorar la entrega de datos a los jugadores, minimizando la latencia y garantizando transmisión eficiente y fluida</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Compilar shaders</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Reemplazar la base de datos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué peer de Godot se usa para comunicación en navegadores cuando ENet no es viable?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) WebRTCMultiplayerPeer</button></li>
+                <li><button class="opt-btn" data-opt="b">b) ENetMultiplayerPeer</button></li>
+                <li><button class="opt-btn" data-opt="c">c) WebSocketMultiplayerPeer</button></li>
+                <li><button class="opt-btn" data-opt="d">d) MultiplayerSpawner</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En Godot, ¿qué nodo se usa para sincronizar propiedades como posición, animación o estado?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) MultiplayerSpawner</button></li>
+                <li><button class="opt-btn" data-opt="b">b) MultiplayerSynchronizer</button></li>
+                <li><button class="opt-btn" data-opt="c">c) WebSocketMultiplayerPeer</button></li>
+                <li><button class="opt-btn" data-opt="d">d) RPC</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En Godot, MultiplayerSpawner sirve para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Instanciar nodos sincronizados en red</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Reproducir música</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Compilar shaders</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Generar números aleatorios</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué mecanismo en Godot permite llamar funciones entre cliente y servidor?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) ENet</button></li>
+                <li><button class="opt-btn" data-opt="b">b) WebSocket</button></li>
+                <li><button class="opt-btn" data-opt="c">c) RPC</button></li>
+                <li><button class="opt-btn" data-opt="d">d) MultiplayerSynchronizer</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Unity Lobby se usa para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Emparejar jugadores automáticamente</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Crear salas, listar partidas, invitar jugadores y mantener información de sesión</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Hostear servidores dedicados</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo chatear</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La seguridad en las herramientas de comunicación debe asegurar, según el material:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Que los jugadores se conecten rápido</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Cifrado de la transmisión y autenticación de usuarios</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Que el servidor sea más caro</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo que el juego sea colorido</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Unity Transport es una capa de:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Alto nivel sobre TCP, sin opciones de confiabilidad</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Bajo nivel sobre UDP, con opciones de confiabilidad, ordenamiento y fragmentación</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Aplicación sobre HTTP</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Red física</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Según el material, VoIP y chat en vivo sirven para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Comprimir texturas del juego</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Reemplazar la base de datos persistente</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Facilitar la comunicación verbal entre jugadores en tiempo real</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Crear servidores de renderizado</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué aspecto clave busca no sobrecargar la red enviando datos de forma eficiente?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Optimización de ancho de banda</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Modelado 3D</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Corrección de color</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Traducción de interfaz</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="d" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La escalabilidad de servidores en herramientas de comunicación significa que deben:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Funcionar solo con pocos jugadores</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Usarse únicamente sin conexión</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Evitar cualquier tipo de solicitud de red</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Manejar un volumen creciente de jugadores y solicitudes</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Las herramientas como Photon o Mirror gestionan sincronización de eventos para que:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Las acciones existan solo en el cliente local</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Las acciones en el servidor se reflejen correctamente en los clientes</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Los jugadores no puedan conectarse entre sí</button></li>
+                <li><button class="opt-btn" data-opt="d">d) El juego no necesite protocolo de red</button></li>
             </ul>
             <div class="feedback"></div>
         </div>

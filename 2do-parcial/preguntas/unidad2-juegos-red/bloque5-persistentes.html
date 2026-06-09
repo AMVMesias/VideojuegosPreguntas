@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloque 5 - Juegos persistentes</title>
-    <link rel="stylesheet" href="../../assets/quiz.css">
+    <link rel="stylesheet" href="../../assets/quiz.css?v=4">
 </head>
-<body>
+<body class="network-quiz">
     <div class="score-bar">
         <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
         <span style="color:#a8a8a8;font-size:0.85rem;">Selecciona una opción para validar</span>
@@ -78,6 +78,17 @@
                 <li><button class="opt-btn" data-opt="b">b) Los servidores que ejecutan el código del juego</button></li>
                 <li><button class="opt-btn" data-opt="c">c) La base de datos</button></li>
                 <li><button class="opt-btn" data-opt="d">d) El navegador web</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Según el material, en juegos persistentes todos los datos se guardan en el servidor, por lo que debemos encargarnos de que:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Los clientes nunca se conecten al servidor</button></li>
+                <li><button class="opt-btn" data-opt="b">b) La base de datos se borre al cerrar sesión</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Los datos estén siempre disponibles</button></li>
+                <li><button class="opt-btn" data-opt="d">d) El mundo se reinicie cada partida</button></li>
             </ul>
             <div class="feedback"></div>
         </div>
@@ -177,6 +188,48 @@
                 <li><button class="opt-btn" data-opt="b">b) Porque los jugadores invierten tiempo en desarrollar su personaje y pueden perder progresos si la infraestructura no es confiable</button></li>
                 <li><button class="opt-btn" data-opt="c">c) Para reducir el uso de CPU</button></li>
                 <li><button class="opt-btn" data-opt="d">d) Para mejorar los gráficos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Consideraciones de diseño</h2>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>En la subdivisión espacial del mundo, la división no tiene por qué hacerse en tamaños equivalentes: debe estudiarse la densidad de población para que el número de usuarios sea parecido en todas las zonas.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Para qué sirve el sistema de actualización y parches en los juegos persistentes según el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Para reiniciar el servidor</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Para cambiar la música del juego</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Para cambiar el estado del juego en el servidor, de forma que todos los jugadores conectados o desconectados experimenten el mismo entorno</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Para eliminar la base de datos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La "economía del juego" en el diseño de PONG se encarga de:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Los precios del juego en la tienda</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Gestionar recompensas, comercio e intercambio de recursos de manera eficiente para evitar desequilibrios</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Crear la moneda del mundo real</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Eliminar jugadores tramposos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál de los siguientes NO es un ejemplo de evento sincronizado mencionado en el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Cambiar la resolución del monitor del cliente</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Clima</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Guerras entre facciones</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Misiones globales</button></li>
             </ul>
             <div class="feedback"></div>
         </div>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 5 - Sistemas de interacción y feedback</title>
+    <link rel="stylesheet" href="../../assets/quiz-jugador.css">
+</head>
+<body>
+    <div class="score-bar">
+        <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
+        <span style="color:#b4a8d4;font-size:0.85rem;">Selecciona una opción para validar</span>
+    </div>
+    <div class="container">
+        <a href="../../../index.html#parcial-2" class="back">Volver al inicio</a>
+        <h1>Bloque 5: Sistemas de interacción y feedback</h1>
+        <p style="color:#b4a8d4;margin:1rem 0;">Páginas 20-27 del material. Tema: arquitecturas de interacción, tipos de feedback y diseño efectivo.</p>
+
+        <h2>Sistemas de interacción</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Los sistemas de interacción son:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Solo el hardware del jugador</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Las arquitecturas que permiten la comunicación efectiva entre el usuario y el videojuego, haciendo que las acciones del jugador afecten al mundo del juego</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Únicamente el código del juego</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo el audio</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál de los siguientes NO es un sistema de interacción mencionado en el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Interfaces Gráficas de Usuario (GUI)</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Reconocimiento de Voz y Gestos</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Sistema de pagos</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Realidad Aumentada (AR) y Realidad Virtual (VR)</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La Realidad Aumentada (AR) y la Realidad Virtual (VR) son tecnologías que:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Crean experiencias inmersivas: AR integra elementos virtuales en el mundo real, VR crea entornos completamente virtuales</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Solo funcionan en LAN</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo son para móviles</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Reemplazan el audio</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>El feedback háptico utiliza vibraciones y otras sensaciones físicas para proporcionar retroalimentación al usuario.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Tipos de interacción</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuántos tipos de interacción menciona el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) 3</button></li>
+                <li><button class="opt-btn" data-opt="b">b) 5 (incluyendo tiempo real vs por turnos)</button></li>
+                <li><button class="opt-btn" data-opt="c">c) 7</button></li>
+                <li><button class="opt-btn" data-opt="d">d) 10</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál es un ejemplo de interacción directa?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Lanzar una bomba que destruye el entorno</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Chat de voz en multijugador</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Recolectar un ítem, abrir una puerta o hablar con un NPC</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Encender luces en el mundo</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La "interacción basada en sistemas" se rige por:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Reglas más complejas como el comportamiento físico de los objetos o las respuestas inteligentes de los enemigos</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Solo el chat</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Únicamente el menú</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo el idioma</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La "interacción social" en videojuegos involucra:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Solo menús</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Comunicación entre jugadores, como el chat de voz en juegos multijugador o decisiones en juegos narrativos</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo hardware</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo gráficos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La interacción ambiental permite al jugador:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Influir en el entorno del juego, como encender luces, resolver acertijos con mecanismos o alterar el clima</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Solo disparar</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Cambiar el idioma</option>
+                <li><button class="opt-btn" data-opt="d">d) Solo eliminar enemigos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>En la interacción en tiempo real las acciones ocurren inmediatamente, como mover un personaje en un juego de disparos.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En la interacción por turnos las acciones tienen:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Lugar aleatorio</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Un orden definido, como en los juegos de estrategia o RPG clásicos</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo velocidad</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Ningún orden</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Diagrama de 8 pasos y feedback</h2>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuántos pasos tiene el diagrama "Sistemas de Interacción Usuario - Videojuego" del material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) 4</button></li>
+                <li><button class="opt-btn" data-opt="b">b) 6</button></li>
+                <li><button class="opt-btn" data-opt="c">c) 8</button></li>
+                <li><button class="opt-btn" data-opt="d">d) 10</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuáles son los 3 tipos principales de feedback según el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Táctil, sonoro y digital</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Visual, sonoro y táctil</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo visual y sonoro</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo háptico y visual</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En el flujo del diagrama, después de que el sistema de interpretación convierte la acción, ¿qué ocurre?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) El jugador escucha música</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Se desconecta el sistema</button></li>
+                <li><button class="opt-btn" data-opt="c">c) El motor lógico del videojuego procesa reglas, colisiones, físicas y eventos, y luego da una respuesta al jugador</button></li>
+                <li><button class="opt-btn" data-opt="d">d) El jugador abandona el juego</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>Sin feedback claro, el jugador no sabe si su acción fue reconocida.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Diseño efectivo y consideraciones</h2>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuáles son las 4 consideraciones para diseñar sistemas de interacción efectivos según el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Accesibilidad, cohesión narrativa, balance de complejidad y pruebas de usabilidad</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Solo precio y marketing</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Únicamente gráficos y sonido</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo red y velocidad</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>El balance de complejidad busca que los sistemas sean:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Tan complicados como sea posible</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Lo suficientemente complejos para ser interesantes, pero no tan complicados que frustren al jugador</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo simples</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo automáticos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La "cohesión narrativa" implica que las interacciones deben:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Ser independientes de la historia</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Cambiar la trama</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Integrarse con la historia y la temática del juego</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo ser aleatorias</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>Las pruebas de usabilidad evalúan si los jugadores comprenden y disfrutan las interacciones como se esperaba.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Actividad y ejemplo</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En la actividad del Chrome Dino Game, el material pide identificar 3 elementos:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Mouse, teclado y gamepad</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Entrada, procesamiento y feedback</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo entrada y salida</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo gráficos y audio</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En el ejemplo de Angry Birds, ¿cuál es la entrada del jugador?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Arrastrar y soltar el ave usando mouse, dedo o pantalla táctil</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Hablar al micrófono</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Usar Kinect</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo escribir texto</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>En Angry Birds, el procesamiento del juego calcula:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Solo el color de los pájaros</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Únicamente el puntaje</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Dirección, fuerza, trayectoria, gravedad, colisiones y destrucción de estructuras</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo el nombre del nivel</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué pasaría si el dinosaurio del Chrome Dino Game no reaccionara rápido al presionar la tecla?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) El juego se haría más fácil</button></li>
+                <li><button class="opt-btn" data-opt="b">b) La experiencia sería frustrante porque la latencia rompería la inmersión y la jugabilidad</button></li>
+                <li><button class="opt-btn" data-opt="c">c) El juego se vería mejor</button></li>
+                <li><button class="opt-btn" data-opt="d">d) No pasaría nada importante</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="final-result" id="finalResult">
+            <h3>Resultado final del Bloque 5 - Sistemas de interacción</h3>
+            <div class="big" id="finalScore"></div>
+            <p id="finalMsg"></p>
+            <button class="reset-btn" onclick="location.reload()">Reintentar bloque</button>
+        </div>
+
+        <p style="margin-top:2rem;">
+            <a href="bloque4-interpretacion.html" class="nav">← Anterior: Bloque 4</a> ·
+            <a href="../../../index.html#parcial-2" class="nav">Volver al inicio</a>
+        </p>
+    </div>
+    <script src="../../assets/quiz.js"></script>
+</body>
+</html>

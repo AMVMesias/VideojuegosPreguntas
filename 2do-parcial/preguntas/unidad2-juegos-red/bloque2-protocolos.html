@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloque 2 - TCP/IP y protocolos</title>
-    <link rel="stylesheet" href="../../assets/quiz.css">
+    <link rel="stylesheet" href="../../assets/quiz.css?v=4">
 </head>
-<body>
+<body class="network-quiz">
     <div class="score-bar">
         <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
         <span style="color:#a8a8a8;font-size:0.85rem;">Selecciona una opción para validar</span>
@@ -111,7 +111,7 @@
         <div class="question" data-type="mc" data-correct="b" data-points="2">
             <div class="q-text"><span class="tipo">MC</span>Una conexión orientada a la conexión requiere:</div>
             <ul class="options">
-                <li><button class="opt-btn" data-opt="a">a) Enviar los datos sin协商 previo</button></li>
+                <li><button class="opt-btn" data-opt="a">a) Enviar los datos sin establecer un acuerdo previo</button></li>
                 <li><button class="opt-btn" data-opt="b">b) El establecimiento de un canal de datos mediante una conexión inicial entre las dos instancias</button></li>
                 <li><button class="opt-btn" data-opt="c">c) Que no exista handshake previo</button></li>
                 <li><button class="opt-btn" data-opt="d">d) Únicamente un servidor central</button></li>
@@ -210,6 +210,63 @@
                 <li><button class="opt-btn" data-opt="b">b) Un protocolo idéntico a TCP pero con otro nombre</button></li>
                 <li><button class="opt-btn" data-opt="c">c) Una versión de HTTP para juegos</button></li>
                 <li><button class="opt-btn" data-opt="d">d) Un protocolo de capa de aplicación</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Protocolos adicionales de capa de aplicación</h2>
+
+        <div class="question" data-type="mc" data-correct="d" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Según la tabla de protocolos de capa de aplicación del material, ¿cuál aparece listado y se usa para correo electrónico?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Telnet</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Ping</button></li>
+                <li><button class="opt-btn" data-opt="c">c) NTP</button></li>
+                <li><button class="opt-btn" data-opt="d">d) POP3</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué protocolo de la capa de aplicación del modelo TCP/IP se usa para acceso remoto a terminales según el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) NTP</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Telnet</button></li>
+                <li><button class="opt-btn" data-opt="c">c) HTTP</button></li>
+                <li><button class="opt-btn" data-opt="d">d) FTP</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En la capa de Acceso a la red del modelo TCP/IP, ¿qué protocolo se lista en el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) IP</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Ethernet</button></li>
+                <li><button class="opt-btn" data-opt="c">c) TCP</button></li>
+                <li><button class="opt-btn" data-opt="d">d) UDP</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿A qué capa del modelo TCP/IP pertenecen los protocolos IGMP y ARP según la tabla del material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Aplicación</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Transporte</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Internet / IP</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Acceso a la red</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Según el material, además de UDP y TCP, Photon documenta conexiones usando:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) HTTP</button></li>
+                <li><button class="opt-btn" data-opt="b">b) WSS</button></li>
+                <li><button class="opt-btn" data-opt="c">c) FTP</button></li>
+                <li><button class="opt-btn" data-opt="d">d) SSH</button></li>
             </ul>
             <div class="feedback"></div>
         </div>

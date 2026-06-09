@@ -110,6 +110,21 @@ a {
     animation-delay: -5s;
 }
 
+.track-4 {
+    top: 72%;
+    right: 10%;
+    width: 26vw;
+    animation-delay: -6.5s;
+}
+
+.track-5 {
+    top: 34%;
+    left: 34%;
+    width: 24vw;
+    opacity: 0.5;
+    animation-delay: -8s;
+}
+
 .ambient-node {
     position: absolute;
     width: 0.72rem;
@@ -148,6 +163,35 @@ a {
     animation-delay: -4.5s;
 }
 
+.node-5 {
+    top: 38%;
+    left: 46%;
+    animation-delay: -2.2s;
+}
+
+.node-6 {
+    bottom: 16%;
+    right: 26%;
+    border-color: rgba(255, 93, 115, 0.78);
+    background: rgba(255, 93, 115, 0.11);
+    box-shadow: 0 0 18px rgba(255, 93, 115, 0.35);
+    animation-delay: -5.8s;
+}
+
+.node-7 {
+    top: 55%;
+    left: 7%;
+    animation-delay: -6.8s;
+}
+
+.node-8 {
+    top: 8%;
+    left: 58%;
+    border-color: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.08);
+    animation-delay: -7.5s;
+}
+
 .ambient-panel {
     position: absolute;
     width: 13rem;
@@ -174,6 +218,83 @@ a {
     height: 6rem;
     transform: rotate(7deg);
     animation-delay: -4s;
+}
+
+.panel-3 {
+    top: 46%;
+    left: 62%;
+    width: 9rem;
+    height: 5.2rem;
+    opacity: 0.2;
+    transform: rotate(11deg);
+    animation-delay: -7s;
+}
+
+.network-quiz {
+    background: linear-gradient(145deg, #08111f 0%, #10242c 48%, #211b34 100%);
+}
+
+.network-quiz::before {
+    opacity: 0.5;
+    background-image:
+        linear-gradient(rgba(79, 209, 197, 0.09) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 93, 115, 0.07) 1px, transparent 1px);
+    background-size: 34px 34px;
+    animation: grid-drift 16s linear infinite;
+}
+
+.network-quiz::after {
+    content: "";
+    position: fixed;
+    inset: -12%;
+    z-index: -1;
+    pointer-events: none;
+    background:
+        linear-gradient(115deg, transparent 0 28%, rgba(79, 209, 197, 0.12) 29%, transparent 30% 56%, rgba(255, 93, 115, 0.09) 57%, transparent 58%),
+        repeating-linear-gradient(90deg, transparent 0 118px, rgba(255, 255, 255, 0.06) 119px 120px);
+    opacity: 0.46;
+    animation: network-scan 12s ease-in-out infinite alternate;
+}
+
+.network-quiz .container {
+    position: relative;
+    z-index: 1;
+}
+
+.network-quiz .container::before,
+.network-quiz .container::after {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    pointer-events: none;
+    border: 1px solid rgba(79, 209, 197, 0.18);
+    border-radius: 8px;
+    background:
+        linear-gradient(90deg, rgba(79, 209, 197, 0.12), transparent 34%),
+        linear-gradient(rgba(255, 255, 255, 0.045), transparent);
+    box-shadow: 0 0 32px rgba(79, 209, 197, 0.14);
+    animation: packet-panel 10s ease-in-out infinite;
+}
+
+.network-quiz .container::before {
+    width: 12rem;
+    height: 6rem;
+    top: 8rem;
+    right: 4vw;
+}
+
+.network-quiz .container::after {
+    width: 8rem;
+    height: 8rem;
+    left: 3vw;
+    bottom: 8vh;
+    border-color: rgba(255, 93, 115, 0.18);
+    box-shadow: 0 0 32px rgba(255, 93, 115, 0.12);
+    animation-delay: -4s;
+}
+
+.network-quiz .question {
+    backdrop-filter: blur(12px);
 }
 
 .hero {
@@ -629,7 +750,18 @@ h3 {
     }
 
     .node-2,
-    .node-4 {
+    .node-4,
+    .node-6,
+    .node-8 {
+        display: none;
+    }
+
+    .network-quiz::after {
+        opacity: 0.28;
+    }
+
+    .network-quiz .container::before,
+    .network-quiz .container::after {
         display: none;
     }
 
@@ -770,6 +902,27 @@ h3 {
     }
     50% {
         transform: translate3d(-18px, 16px, 0) rotate(-5deg);
+    }
+}
+
+@keyframes network-scan {
+    from {
+        transform: translate3d(-4vw, -2vh, 0) rotate(0deg);
+    }
+    to {
+        transform: translate3d(5vw, 4vh, 0) rotate(1deg);
+    }
+}
+
+@keyframes packet-panel {
+    0%,
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 0.28;
+    }
+    50% {
+        transform: translate3d(18px, -14px, 0);
+        opacity: 0.5;
     }
 }
 

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 2 - Clasificación de entradas y dispositivos</title>
+    <link rel="stylesheet" href="../../assets/quiz-jugador.css">
+</head>
+<body>
+    <div class="score-bar">
+        <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
+        <span style="color:#b4a8d4;font-size:0.85rem;">Selecciona una opción para validar</span>
+    </div>
+    <div class="container">
+        <a href="../../../index.html#parcial-2" class="back">Volver al inicio</a>
+        <h1>Bloque 2: Clasificación de entradas y dispositivos</h1>
+        <p style="color:#b4a8d4;margin:1rem 0;">Páginas 7-10 del material. Tema: tipos de entradas (control, datos, sensores) y categorías de dispositivos.</p>
+
+        <h2>Clasificación por función y tipo</h2>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿En cuántos tipos principales se clasifican las entradas según el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) 1</button></li>
+                <li><button class="opt-btn" data-opt="b">b) 2</button></li>
+                <li><button class="opt-btn" data-opt="c">c) 3</button></li>
+                <li><button class="opt-btn" data-opt="d">d) 4</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuáles son los 3 tipos principales de entradas según el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Directas, Indirectas y de Movimiento</button></li>
+                <li><button class="opt-btn" data-opt="b">b) De Control, de Datos y de Sensores</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Analógicas, Digitales y Mixtas</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Hardware, Software y Red</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Además de la clasificación por función, las entradas se pueden clasificar según:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Su origen: dispositivos de hardware o entradas generadas por el propio juego</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Su precio</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Su color</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Su idioma</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Entradas de control</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Las entradas de control permiten al jugador:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Configurar la dificultad del juego</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Controlar el personaje o la interfaz del juego</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Capturar información del entorno</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Ingresar texto</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál de los siguientes NO es un ejemplo de entrada de control mencionado en el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Botones de Joystick</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Teclas de Teclado</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Sensor de movimiento GPS</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Pantalla táctil</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>Los movimientos de mouse permiten apuntar y realizar acciones precisas como entrada de control.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Los controles de voz en el material se mencionan como ejemplo de:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Entrada de datos</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Entrada de control, ejecutando acciones mediante comandos de voz</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Entrada de sensores únicamente</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo sirven para chat</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Entradas de datos y sensores</h2>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Las entradas de datos permiten al jugador:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Ingresar información al juego, como nombres, códigos, opciones de menú o configuración</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Capturar información del entorno</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Detectar posición GPS</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Reconocer gestos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Los datos de configuración que el jugador puede ajustar incluyen:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Nombre del personaje</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Dificultad, resolución, etc.</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Códigos secretos</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo idioma</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Las entradas de sensores capturan:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Solo datos del teclado</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Solo datos del mouse</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Información del entorno o del dispositivo, como movimiento, posición GPS, cámara, acelerómetro y giroscopio</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo texto</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>El acelerómetro y el giroscopio son ejemplos de:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Entradas de sensores</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Entradas de datos</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Entradas de control exclusivamente</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo salidas de audio</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Categorías de dispositivos</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuántas categorías de dispositivos de entrada menciona el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) 3</button></li>
+                <li><button class="opt-btn" data-opt="b">b) 5</button></li>
+                <li><button class="opt-btn" data-opt="c">c) 7</button></li>
+                <li><button class="opt-btn" data-opt="d">d) 10</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Las pantallas táctiles y el stylus son ejemplos de:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Dispositivos indirectos</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Dispositivos de movimiento</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Dispositivos directos, que permiten una interacción directa con el contenido en pantalla</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Interfaces cerebrales</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Los teclados, ratones y gamepads son ejemplos de dispositivos:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Indirectos, que requieren un intermediario para interactuar con el contenido</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Directos</button></li>
+                <li><button class="opt-btn" data-opt="c">c) De movimiento</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Cerebrales</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>Los dispositivos de entrada especializados incluyen:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Teclados y mouse genéricos</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Volantes para juegos de carreras y palancas de mando para simuladores de vuelo</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo smartphones</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo tablets</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>Las Interfaces Cerebrales Directas son tecnologías emergentes que permiten el control mediante señales cerebrales, aún en desarrollo.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál es la relación correcta entre categoría y ejemplo?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Pantalla táctil = dispositivo de movimiento</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Volante = dispositivo directo</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Wii/Kinect/VR = dispositivos de movimiento; volantes = especializados; pantalla táctil = directo</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Gamepad = dispositivo de movimiento</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="final-result" id="finalResult">
+            <h3>Resultado final del Bloque 2 - Clasificación</h3>
+            <div class="big" id="finalScore"></div>
+            <p id="finalMsg"></p>
+            <button class="reset-btn" onclick="location.reload()">Reintentar bloque</button>
+        </div>
+
+        <p style="margin-top:2rem;">
+            <a href="bloque1-interaccion.html" class="nav">← Anterior: Bloque 1</a> ·
+            <a href="bloque3-lectura.html" class="nav">→ Siguiente: Bloque 3 - Lectura y captura</a>
+        </p>
+    </div>
+    <script src="../../assets/quiz.js"></script>
+</body>
+</html>

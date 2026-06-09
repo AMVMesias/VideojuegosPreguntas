@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloque 6 - Técnicas avanzadas para juegos de red</title>
-    <link rel="stylesheet" href="../../assets/quiz.css">
+    <link rel="stylesheet" href="../../assets/quiz.css?v=4">
 </head>
-<body>
+<body class="network-quiz">
     <div class="score-bar">
         <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
         <span style="color:#a8a8a8;font-size:0.85rem;">Selecciona una opción para validar</span>
@@ -243,6 +243,59 @@
                 <li><button class="opt-btn" data-opt="c">c) Reemplazar la red</button></li>
                 <li><button class="opt-btn" data-opt="d">d) Solo es un término de marketing</button></li>
             </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Ejemplo aplicado y técnicas adicionales</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En el ejemplo aplicado del material, cuando un jugador siente retraso al moverse, ¿qué técnica se aplica?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Interpolación</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Client-side prediction</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Lag compensation</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Extrapolación limitada</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En el ejemplo aplicado, cuando se consume mucho ancho de banda, ¿qué técnica se recomienda?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Delta compression</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Servidor autoritativo</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Interpolación</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Predicción</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Cuando un jugador tiene mala conexión, el ejemplo aplicado del material recomienda usar:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Rollback networking</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Servidor autoritativo</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Extrapolación limitada</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Delta compression</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Las "técnicas de carga y balanceo" en juegos avanzados consisten en:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Usar un solo servidor potente</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Utilizar varias instancias de servidor y balanceadores para distribuir jugadores y evitar caída de rendimiento</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Eliminar los servidores</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Reducir la calidad gráfica</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>El material señala que un aspecto avanzado es decidir si el juego usará cliente-servidor tradicional o un modelo P2P que elimina servidores centrales pero aumenta los riesgos de piratería.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
             <div class="feedback"></div>
         </div>
 

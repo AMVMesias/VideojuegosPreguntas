@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloque 3 - Programación de red</title>
-    <link rel="stylesheet" href="../../assets/quiz.css">
+    <link rel="stylesheet" href="../../assets/quiz.css?v=4">
 </head>
-<body>
+<body class="network-quiz">
     <div class="score-bar">
         <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
         <span style="color:#a8a8a8;font-size:0.85rem;">Selecciona una opción para validar</span>
@@ -297,6 +297,88 @@
                 <li><button class="opt-btn" data-opt="c">c) WebSocket</button></li>
                 <li><button class="opt-btn" data-opt="d">d) HTTP/HTTPS</button></li>
             </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Según la comparación general, HTTP/HTTPS se recomienda principalmente para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Movimiento y disparos rápidos</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Juegos P2P en tiempo real</button></li>
+                <li><button class="opt-btn" data-opt="c">c) APIs, ranking, login y persistencia</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Reemplazar a ENet en LAN</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En la tabla de ENet, ¿cuál de estos usos aparece mencionado?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) RPC, sincronización, posición, estados y eventos</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Renderizado de shaders y texturas</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Edición de audio local</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Traducción automática de textos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Detalles del material</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En el diagrama de sockets del material, ¿qué acción NO es del cliente sino del servidor?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) connect</button></li>
+                <li><button class="opt-btn" data-opt="b">b) listen y accept</button></li>
+                <li><button class="opt-btn" data-opt="c">c) send/receive</button></li>
+                <li><button class="opt-btn" data-opt="d">d) close</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En videojuegos, los protocolos permiten que clientes y servidores intercambien información. ¿Cuál de los siguientes NO es mencionado por el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Movimiento, acciones, disparos, daño</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Reproducción de música local en el dispositivo</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Chat, inventario, estado de la partida</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Conexión y desconexión</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cómo se llama la solicitud HTTP especial que inicia el cambio a WebSocket según el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Solicitud de cierre</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Solicitud de actualización</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solicitud GET estándar</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solicitud POST</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Cada mensaje de WebSocket está envuelto en:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Marcos (frames) que indican cuándo comienza y termina el mensaje</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Cabeceras XML</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Bloques de 1024 bytes fijos</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Archivos binarios comprimidos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>Una característica del WebSocket es su bajo overhead comparado con HTTP tras establecer la conexión inicial.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>WebSocket mantiene una conexión persistente una vez establecida, permitiendo a ambas partes enviar datos en cualquier momento.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
             <div class="feedback"></div>
         </div>
 
