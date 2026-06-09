@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 6 - Técnicas avanzadas para juegos de red</title>
+    <link rel="stylesheet" href="../../assets/quiz.css">
+</head>
+<body>
+    <div class="score-bar">
+        <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
+        <span style="color:#a8a8a8;font-size:0.85rem;">Selecciona una opción para validar</span>
+    </div>
+    <div class="container">
+        <a href="../../../index.html#parcial-2" class="back">Volver al inicio</a>
+        <h1>Bloque 6: Técnicas avanzadas para juegos de red</h1>
+        <p style="color:#a8a8a8;margin:1rem 0;">Páginas 47-57 del material nuevo (Unidad 2 - Juegos en red).</p>
+
+        <h2>Concepto general</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Las técnicas avanzadas para juegos de red son métodos que permiten mejorar:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Únicamente la calidad gráfica</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Rendimiento, estabilidad y experiencia del usuario en juegos en línea</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo el marketing del juego</button></li>
+                <li><button class="opt-btn" data-opt="d">d) La música del juego</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Estas técnicas se usan para que el juego se sienta:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Más caro de desarrollar</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Fluido, justo y estable aunque exista latencia, pérdida de paquetes o diferencias entre los equipos</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Más complicado de instalar</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Más lento a propósito</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Servidor autoritativo</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En una arquitectura cliente-servidor autoritativa:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) El cliente tiene la verdad absoluta del juego</button></li>
+                <li><button class="opt-btn" data-opt="b">b) El servidor tiene la verdad del juego: el cliente envía entradas pero el servidor valida lo que realmente ocurre</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Nadie valida nada</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Ambos clientes deciden por mayoría</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>El principal riesgo del servidor autoritativo es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Que el cliente tenga lag</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Que no haya gráficos</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Consume más recursos en servidor</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Que el juego sea muy simple</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Predicción de movimiento</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La predicción de movimiento se utiliza para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Aumentar la latencia</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Manejar la latencia de la red, haciendo que los movimientos del jugador sean suaves a pesar de las demoras</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Eliminar el servidor</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Reemplazar al cliente</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La desventaja de la predicción de movimiento es que:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Si el servidor corrige el estado, puede aparecer un "salto" o corrección visual</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Hace el juego más lento</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Reduce la calidad gráfica</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo funciona en LAN</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Server reconciliation</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Server reconciliation es el proceso donde:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) El cliente ignora al servidor</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Después de predecir, el cliente compara su estado local con el estado oficial enviado por el servidor y corrige si hay diferencia</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Se desconecta el cliente</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo se aplica en menús</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Si la corrección de server reconciliation no es suave, el jugador nota:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Tirones o saltos bruscos</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Mejores gráficos</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Menos sonido</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Mayor velocidad de juego</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Interpolación y extrapolación</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La interpolación suaviza el movimiento de otros jugadores usando:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Predicciones a futuro</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Estados pasados conocidos, dibujando una transición entre posiciones</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Conexión con base de datos</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Sonido envolvente</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La interpolación es especialmente útil porque:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Aumenta la latencia</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Los paquetes no siempre llegan con ritmo constante</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Hace que el juego sea más caro</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo funciona en móvil</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La extrapolación intenta:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Conectar con base de datos</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Eliminar la latencia</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Adivinar hacia dónde irá un objeto si no llegan paquetes nuevos, asumiendo que seguirá moviéndose en la misma dirección</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Eliminar al servidor</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>La extrapolación es útil para evitar congelamientos, pero si el jugador cambia de dirección la predicción puede ser incorrecta.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Lag compensation y rate limiting</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La compensación de latencia (lag compensation) permite que:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) El cliente mienta sobre su posición</button></li>
+                <li><button class="opt-btn" data-opt="b">b) El servidor evalúe una acción según lo que veía el jugador en el momento de ejecutarla, "rebobinando" brevemente el estado del mundo</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Se aumente la latencia a propósito</button></li>
+                <li><button class="opt-btn" data-opt="d">d) No haya servidor</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>El riesgo del lag compensation es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Mejorar la calidad gráfica</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Hacer el juego más fácil</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Jugadores con mucho ping pueden generar situaciones injustas si no se limita correctamente</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Eliminar la red</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Rate limiting controla:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) La calidad del sonido</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Cuántos mensajes puede enviar un cliente por segundo</button></li>
+                <li><button class="opt-btn" data-opt="c">c) La velocidad de los gráficos</button></li>
+                <li><button class="opt-btn" data-opt="d">d) El precio del juego</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Casos típicos donde se aplica rate limiting incluyen:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Elección de color del personaje</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Carga de guardado local</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Spam de chat, ataques repetidos, paquetes excesivos e intentos de conexión</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Selección de idioma</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Rollback networking</h2>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>El rollback networking es muy usado en:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Juegos de pelea</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Juegos de cocina</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Juegos de texto</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Juegos sin red</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En rollback networking, si llega una entrada diferente a la predicha, el juego:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Se cierra</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Retrocede unos frames, corrige y vuelve a simular</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Aumenta la latencia</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Desconecta al jugador</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>El requisito del rollback networking es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) TCP obligatorio</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Servidor autoritativo</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Simulación determinista</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Conexión por LAN</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>El "desacoplamiento de servidor y cliente" en juegos avanzados sirve para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Eliminar el servidor</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Reducir la dependencia, mejorar la escalabilidad y la seguridad</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Reemplazar la red</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo es un término de marketing</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="final-result" id="finalResult">
+            <h3>Resultado final del Bloque 6 - Técnicas avanzadas</h3>
+            <div class="big" id="finalScore"></div>
+            <p id="finalMsg"></p>
+            <button class="reset-btn" onclick="location.reload()">Reintentar bloque</button>
+        </div>
+
+        <p style="margin-top:2rem;">
+            <a href="bloque5-persistentes.html" class="nav">← Anterior: Bloque 5</a> ·
+            <a href="bloque7-herramientas.html" class="nav">→ Siguiente: Bloque 7 - Herramientas Unity y Godot</a>
+        </p>
+    </div>
+    <script src="../../assets/quiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 7 - Herramientas de comunicación en juegos de red</title>
+    <link rel="stylesheet" href="../../assets/quiz.css">
+</head>
+<body>
+    <div class="score-bar">
+        <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
+        <span style="color:#a8a8a8;font-size:0.85rem;">Selecciona una opción para validar</span>
+    </div>
+    <div class="container">
+        <a href="../../../index.html#parcial-2" class="back">Volver al inicio</a>
+        <h1>Bloque 7: Herramientas de comunicación</h1>
+        <p style="color:#a8a8a8;margin:1rem 0;">Páginas 58-64 del material nuevo (Unidad 2 - Juegos en red).</p>
+
+        <h2>Tipos de herramientas</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál de estos NO es un tipo de herramienta de comunicación en juegos de red según el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Sockets y API de redes</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Herramientas de modelado 3D</button></li>
+                <li><button class="opt-btn" data-opt="c">c) WebSockets</button></li>
+                <li><button class="opt-btn" data-opt="d">d) VoIP y chat en vivo</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Los sockets permiten comunicación bidireccional entre servidor y cliente usando:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Solo HTTP</button></li>
+                <li><button class="opt-btn" data-opt="b">b) TCP o UDP</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo Bluetooth</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo WiFi directo</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>UDP es más adecuado que TCP para juegos donde:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) No importa la latencia</button></li>
+                <li><button class="opt-btn" data-opt="b">b) El retraso o latencia debe ser mínimo en tiempo real</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo se envían mensajes de chat</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Se necesita guardar progreso</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Los CDN (Content Delivery Network) se usan para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Mejorar la entrega de datos, minimizando la latencia y garantizando que los datos del juego se transmitan de manera eficiente</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Solo comprimir imágenes</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Reemplazar al servidor</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Crear modelos 3D</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Middleware de red como Photon, PlayFab o Unity Multiplayer proporcionan:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Únicamente diseño gráfico</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Soluciones integradas para comunicación en multijugador, gestionando conexiones, sincronización y mantenimiento de sesiones</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo compresión de audio</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Motores de física</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué técnica se utiliza para optimizar el ancho de banda enviando solo los cambios pequeños en el estado del juego?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Full state sync</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Delta compression</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Backup completo</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Raw streaming</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Herramientas oficiales de Unity</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Netcode for GameObjects de Unity sirve para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Compilar shaders</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Sincronizar objetos, jugadores, variables, RPC y escenas</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo crear UI</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Reproducir audio</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Unity Transport es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Un sistema de guardado en la nube</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Un motor de física</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Una capa de transporte de bajo nivel sobre UDP, con opciones de confiabilidad, ordenamiento y fragmentación</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Una herramienta de modelado</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Unity Relay se usa para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Servir para chat de voz</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Conectar jugadores sin abrir puertos ni usar servidor dedicado, útil para juegos hosteados por un jugador</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Crear gráficos 2D</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Compilar shaders</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Unity Matchmaker se encarga de:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Emparejar jugadores automáticamente según reglas de búsqueda</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Compilar el juego para móvil</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Generar números aleatorios</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Reproducir música</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Multiplayer Services SDK de Unity unifica bajo una sola API:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Mirror, FishNet y Photon</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Lobby, Relay y Matchmaker</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo chat de voz</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo físicas</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Multiplay Hosting de Unity sirve para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Editar sprites</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Hosting de servidores dedicados para juegos con mayor demanda</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Compilar shaders</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo audio</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Herramientas externas de Unity</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Mirror es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Una herramienta privada de pago</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Una librería open source de alto nivel para Unity, muy usada y compatible con Unity 2019-2022 y Unity 6</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Un motor de físicas 2D</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Una librería de Godot</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Photon Fusion se describe como:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Open source y gratuito</button></li>
+                <li><button class="opt-btn" data-opt="b">b) SDK comercial de alto rendimiento para sincronización de estado, predicción del cliente y compensación de latencia</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Librería de Godot</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo para chat</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Herramientas de Godot</h2>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál es el sistema principal para RPC, autoridad y sincronización entre nodos en Godot?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) High-level Multiplayer API</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Mirror</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Photon Fusion</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Multiplay Hosting</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>ENetMultiplayerPeer en Godot usa:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) TCP puro</button></li>
+                <li><button class="opt-btn" data-opt="b">b) UDP confiable, recomendado para escritorio, LAN o Internet</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo Bluetooth</button></li>
+                <li><button class="opt-btn" data-opt="d">d) HTTP únicamente</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>WebSocketMultiplayerPeer en Godot se usa principalmente para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Juegos 2D únicamente</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Conexiones por LAN</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Comunicación cliente-servidor usando WebSocket; útil para web o integración con servidores</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo multijugador local</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>MultiplayerSynchronizer de Godot sirve para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Compilar shaders</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Sincronizar propiedades de nodos, como posición, animación o estado</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Crear UI</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo física</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Comparación Unity vs Godot</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál es la solución oficial principal de Unity para multijugador?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) High-level Multiplayer API</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Netcode for GameObjects</button></li>
+                <li><button class="opt-btn" data-opt="c">c) ENetMultiplayerPeer</button></li>
+                <li><button class="opt-btn" data-opt="d">d) WebSocketMultiplayerPeer</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál de las siguientes afirmaciones es correcta según la comparación del material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Godot incluye Lobby, Relay, Matchmaker y Multiplay integrados</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Unity no incluye servicios comerciales equivalentes</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Godot no incluye servicios comerciales equivalentes integrados como los de Unity</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Unity tiene menor control del código que Godot en cualquier caso</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Según el material, Godot es ideal para:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Juegos comerciales con servicios en la nube</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Proyectos educativos, indies, 2D, prototipos y juegos con control propio del servidor</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo juegos AAA</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Únicamente juegos móviles</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="final-result" id="finalResult">
+            <h3>Resultado final del Bloque 7 - Herramientas</h3>
+            <div class="big" id="finalScore"></div>
+            <p id="finalMsg"></p>
+            <button class="reset-btn" onclick="location.reload()">Reintentar bloque</button>
+        </div>
+
+        <p style="margin-top:2rem;">
+            <a href="bloque6-tecnicas.html" class="nav">← Anterior: Bloque 6</a> ·
+            <a href="../../../index.html#parcial-2" class="nav">Volver al inicio</a>
+        </p>
+    </div>
+    <script src="../../assets/quiz.js"></script>
+</body>
+</html>

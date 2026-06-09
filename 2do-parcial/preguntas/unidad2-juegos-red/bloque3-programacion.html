@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 3 - Programación de red</title>
+    <link rel="stylesheet" href="../../assets/quiz.css">
+</head>
+<body>
+    <div class="score-bar">
+        <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
+        <span style="color:#a8a8a8;font-size:0.85rem;">Selecciona una opción para validar</span>
+    </div>
+    <div class="container">
+        <a href="../../../index.html#parcial-2" class="back">Volver al inicio</a>
+        <h1>Bloque 3: Programación de red</h1>
+        <p style="color:#a8a8a8;margin:1rem 0;">Páginas 13-31 del material nuevo (Unidad 2 - Juegos en red).</p>
+
+        <h2>Conceptos de programación en red</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La programación en red para videojuegos permite:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Solo conectar jugadores a través de LAN</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Conectar jugadores a través de Internet o redes locales (LAN), sincronizando posiciones, acciones y estados de juego en tiempo real</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Únicamente diseñar niveles de juego</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Generar gráficos en 3D</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>El objetivo principal de la programación en red es sincronizar el juego minimizando:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) El ancho de banda</button></li>
+                <li><button class="opt-btn" data-opt="b">b) La cantidad de jugadores</button></li>
+                <li><button class="opt-btn" data-opt="c">c) La latencia y evitando trampas</button></li>
+                <li><button class="opt-btn" data-opt="d">d) El uso de CPU</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuáles son los dos elementos imprescindibles para programar la red?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Crear las conexiones entre clientes y diseñar un protocolo de comunicación</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Comprar un servidor y contratar hosting</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Modelar personajes y compilar shaders</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Diseñar niveles y agregar música</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué nivel de control ofrece el uso de sockets?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) No tienen acceso a la red</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Acceso directo a la capa de red, con control total de cada byte que se transmite</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo control de la capa de aplicación</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Limitado a HTTP únicamente</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>Un mecanismo de alto nivel gestiona mediante abstracciones todas las conexiones concurrentes y su estado.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Protocolos en videojuegos (UDP)</h2>
+
+        <div class="question" data-type="mc" data-correct="d" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>UDP es muy usado en videojuegos en tiempo real porque:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Garantiza entrega de todos los paquetes</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Es muy lento pero confiable</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Necesita establecer un canal de comunicación previo</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Es rápido y tiene baja latencia</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Ejemplos de uso de UDP en videojuegos son:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Login de usuarios y guardado de progreso</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Movimiento de jugadores, disparos rápidos, estados temporales, FPS y juegos de carreras</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Compra y venta de objetos en el inventario</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Listas de servidores y salas</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>La principal desventaja de UDP es que puede perder paquetes.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Protocolos en videojuegos (TCP)</h2>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>TCP garantiza que los datos lleguen:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Sin ningún orden específico</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Más rápido que UDP</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Completos y en orden, aunque puede introducir más latencia</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Sin retransmisión</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Ejemplos de uso de TCP en videojuegos son:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Movimiento y disparo rápido</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Login, chat, inventario, guardado de progreso y menús online</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo FPS en tiempo real</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo transmisión de voz</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Reliable UDP</h2>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué es Reliable UDP?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Una técnica que usa UDP con mecanismos adicionales para hacerlo más confiable</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Un protocolo único estándar como TCP</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Una versión mejorada de HTTP</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Una librería gráfica</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué significa ACK en el contexto de Reliable UDP?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Es un tipo de cifrado</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Es la confirmación de que un paquete llegó</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Es un motor de física</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Es un protocolo de capa de aplicación</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>Reliable UDP usa número de secuencia para saber el orden de los paquetes.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué hace el mecanismo de "canales confiables/no confiables" en Reliable UDP?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Bloquea el envío de paquetes</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Obliga a usar TCP y UDP a la vez</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Separa datos críticos (confiables) de datos rápidos (no confiables)</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Cifra la comunicación</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Sockets</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Un socket es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Una pieza física del hardware</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Una entidad que permite a un computador intercambiar datos con otros computadores</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Un protocolo de capa de aplicación</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Una herramienta de diseño gráfico</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuántos elementos componen un socket según el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) 3</button></li>
+                <li><button class="opt-btn" data-opt="b">b) 4</button></li>
+                <li><button class="opt-btn" data-opt="c">c) 5</button></li>
+                <li><button class="opt-btn" data-opt="d">d) 6</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>Los 5 elementos de un socket son:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) IP origen, MAC origen, MAC destino, protocolo, puerto</button></li>
+                <li><button class="opt-btn" data-opt="b">b) IP origen, puerto origen, IP destino, puerto destino y tipo de protocolo (TCP/UDP)</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo IP y puerto</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Usuario, contraseña, IP, puerto y servidor</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>WebSocket</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>WebSocket es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Un lenguaje de programación</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Un protocolo de comunicación que permite una conexión persistente entre un navegador y un servidor</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Un motor de física</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Una API de dibujo</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿En qué puertos trabaja WebSocket?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) 21 y 22</button></li>
+                <li><button class="opt-btn" data-opt="b">b) 25 y 110</button></li>
+                <li><button class="opt-btn" data-opt="c">c) 80 (HTTP) y 443 (HTTPS)</button></li>
+                <li><button class="opt-btn" data-opt="d">d) 8080 únicamente</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La principal diferencia de WebSocket con HTTP normal es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Permite comunicación bidireccional donde el servidor también puede enviar mensajes sin esperar solicitud</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Es más lento</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo funciona en LAN</button></li>
+                <li><button class="opt-btn" data-opt="d">d) No permite chats</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué código HTTP confirma el cambio a WebSocket?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) 200 OK</button></li>
+                <li><button class="opt-btn" data-opt="b">b) 101 Switching Protocols</button></li>
+                <li><button class="opt-btn" data-opt="c">c) 404 Not Found</button></li>
+                <li><button class="opt-btn" data-opt="d">d) 500 Internal Server Error</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>Godot soporta WebSocket tanto en exportaciones nativas como web.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>WebRTC y ENet</h2>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>WebRTC permite:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Solo texto en navegadores</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Únicamente juegos 2D</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Comunicación en tiempo real, especialmente entre navegadores, incluyendo juegos web P2P, voz/video y experiencias colaborativas</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo ejecutar bases de datos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>ENet es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Un motor gráfico 2D</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Una librería de red basada en UDP que ofrece comunicación confiable y no confiable, muy usada en Godot</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Una API de UI para Unity</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Un lenguaje de scripting</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En Godot, ENetMultiplayerPeer es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Una de las implementaciones disponibles para multijugador de alto nivel</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Una herramienta de diseño de niveles</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Un tipo de nodo de UI</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Un sistema de partículas</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>Según la comparación general, ¿qué protocolo tiene velocidad ALTA, confiabilidad BAJA y se usa para movimiento?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) TCP</button></li>
+                <li><button class="opt-btn" data-opt="b">b) UDP</button></li>
+                <li><button class="opt-btn" data-opt="c">c) WebSocket</button></li>
+                <li><button class="opt-btn" data-opt="d">d) HTTP/HTTPS</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="final-result" id="finalResult">
+            <h3>Resultado final del Bloque 3 - Programación de red</h3>
+            <div class="big" id="finalScore"></div>
+            <p id="finalMsg"></p>
+            <button class="reset-btn" onclick="location.reload()">Reintentar bloque</button>
+        </div>
+
+        <p style="margin-top:2rem;">
+            <a href="bloque2-protocolos.html" class="nav">← Anterior: Bloque 2</a> ·
+            <a href="bloque4-arquitecturas.html" class="nav">→ Siguiente: Bloque 4 - Arquitecturas</a>
+        </p>
+    </div>
+    <script src="../../assets/quiz.js"></script>
+</body>
+</html>

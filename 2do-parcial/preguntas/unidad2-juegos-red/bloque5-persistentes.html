@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 5 - Juegos persistentes</title>
+    <link rel="stylesheet" href="../../assets/quiz.css">
+</head>
+<body>
+    <div class="score-bar">
+        <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
+        <span style="color:#a8a8a8;font-size:0.85rem;">Selecciona una opción para validar</span>
+    </div>
+    <div class="container">
+        <a href="../../../index.html#parcial-2" class="back">Volver al inicio</a>
+        <h1>Bloque 5: Juegos persistentes (PONG)</h1>
+        <p style="color:#a8a8a8;margin:1rem 0;">Páginas 39-46 del material nuevo (Unidad 2 - Juegos en red).</p>
+
+        <h2>Concepto de PONG</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué significa PONG en el contexto de juegos en red?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Protocol Online Network Game</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Persistent Online Games Design (Diseño de Juegos en Línea Persistentes)</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Player Online Network Group</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Power Of Network Gaming</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En un Persistent Online Game:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) El mundo se reinicia cuando un jugador se desconecta</button></li>
+                <li><button class="opt-btn" data-opt="b">b) El mundo del juego continúa existiendo y evolucionando, independientemente de si un jugador está conectado o no</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo funciona en LAN</button></li>
+                <li><button class="opt-btn" data-opt="d">d) No tiene servidor</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>En los juegos persistentes, el servidor está siempre funcionando, incluso cuando no hay jugadores conectados.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Arquitectura del sistema</h2>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La infraestructura de red de un mundo persistente se compone de:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Solo clientes y un servidor</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Solo servidores de juego</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Tres capas: clientes (interfaz), servidores (lógica) y servidores de bases de datos (persistencia)</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Una sola capa centralizada</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué hacen los servidores de bases de datos en un mundo persistente?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Ejecutan la interfaz gráfica</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Guardan toda la información referente a los usuarios y algunos datos sobre el estado del juego</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Renderizan los gráficos</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Reproducen música</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>En la arquitectura persistente, ¿qué capa decide lo que está pasando en el juego en cada momento?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Los clientes</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Los servidores que ejecutan el código del juego</button></li>
+                <li><button class="opt-btn" data-opt="c">c) La base de datos</button></li>
+                <li><button class="opt-btn" data-opt="d">d) El navegador web</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Segmentación de mundo</h2>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Por qué es necesaria la segmentación de mundo?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Para reducir la calidad gráfica</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Para limitar el número total de jugadores del juego</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Para garantizar que todos los usuarios disfruten de buena experiencia limitando el número de conexiones máximas que un servidor puede gestionar</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Para eliminar el servidor central</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Las dos técnicas principales para segmentar el mundo son:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Particiones temporales y por niveles</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Reinos (realms) y subdivisión espacial del mundo</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Servidor único y multijugador local</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo LAN y WAN</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>Sobre los "reinos" (realms) en la segmentación de mundo:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Son servidores independientes, cada uno con una copia completa del mundo, sin transferir información de un usuario entre ellos</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Son salas temporales que se crean y destruyen</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Reemplazan la base de datos</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo funcionan en LAN</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>Una ventaja adicional de los reinos es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Que no se necesita internet</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Que todos los jugadores pueden transferirse libremente entre ellos</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Que se pueden colocar en diferentes localizaciones para reducir la latencia entre cliente y servidor</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Que no requieren base de datos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En la subdivisión espacial del mundo:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Se crean copias completas del mundo en distintos servidores</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Se recorta el mapa en varias zonas, gestionadas por servidores diferentes, considerando la densidad de población</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo se divide entre los jugadores de forma aleatoria</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Es exactamente lo mismo que reinos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="false" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>En la subdivisión espacial del mundo, las zonas siempre deben dividirse en tamaños equivalentes.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Elementos clave y consideraciones</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál de los siguientes NO es un elemento clave en el diseño de PONG según el material?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Mundo persistente</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Gráficos en alta resolución 4K</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Base de datos centralizada</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Sistema de actualización y parches</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>Los "eventos sincronizados" en PONG permiten que:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Cada jugador vea su propia versión del mundo</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Los eventos se borren al desconectarse</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Los jugadores que regresen al juego vean cómo el tiempo y sus decisiones pasadas han afectado al mundo</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Los eventos ocurran solo cuando un jugador esté conectado</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Por qué la seguridad es esencial en los juegos persistentes?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Para evitar la piratería del software</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Porque los jugadores invierten tiempo en desarrollar su personaje y pueden perder progresos si la infraestructura no es confiable</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Para reducir el uso de CPU</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Para mejorar los gráficos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="final-result" id="finalResult">
+            <h3>Resultado final del Bloque 5 - Juegos persistentes</h3>
+            <div class="big" id="finalScore"></div>
+            <p id="finalMsg"></p>
+            <button class="reset-btn" onclick="location.reload()">Reintentar bloque</button>
+        </div>
+
+        <p style="margin-top:2rem;">
+            <a href="bloque4-arquitecturas.html" class="nav">← Anterior: Bloque 4</a> ·
+            <a href="bloque6-tecnicas.html" class="nav">→ Siguiente: Bloque 6 - Técnicas avanzadas</a>
+        </p>
+    </div>
+    <script src="../../assets/quiz.js"></script>
+</body>
+</html>

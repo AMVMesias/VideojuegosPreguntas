@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloque 4 - Arquitecturas de comunicación</title>
+    <link rel="stylesheet" href="../../assets/quiz.css">
+</head>
+<body>
+    <div class="score-bar">
+        <span>Puntaje: <span id="score">0</span> / <span id="total">0</span></span>
+        <span style="color:#a8a8a8;font-size:0.85rem;">Selecciona una opción para validar</span>
+    </div>
+    <div class="container">
+        <a href="../../../index.html#parcial-2" class="back">Volver al inicio</a>
+        <h1>Bloque 4: Arquitecturas de comunicación</h1>
+        <p style="color:#a8a8a8;margin:1rem 0;">Páginas 32-38 del material nuevo (Unidad 2 - Juegos en red).</p>
+
+        <h2>Concepto general</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La arquitectura de comunicación en un videojuego define:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) El lenguaje de programación a usar</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Cómo los dispositivos, clientes, servidores y peers se conectan entre sí y cómo intercambian información en tiempo real</button></li>
+                <li><button class="opt-btn" data-opt="c">c) El motor gráfico del juego</button></li>
+                <li><button class="opt-btn" data-opt="d">d) La música del juego</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>La arquitectura de comunicación es un aspecto crítico para determinar:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Rendimiento, escalabilidad, sincronización y tipo de experiencia de juego</button></li>
+                <li><button class="opt-btn" data-opt="b">b) El precio del juego</button></li>
+                <li><button class="opt-btn" data-opt="c">c) El idioma del juego</button></li>
+                <li><button class="opt-btn" data-opt="d">d) La resolución de pantalla</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Cliente-Servidor</h2>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En la arquitectura cliente-servidor:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Todos los nodos son iguales</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Un agente actúa como servidor central y otro(s) como cliente(s) que envían peticiones y reciben actualizaciones</button></li>
+                <li><button class="opt-btn" data-opt="c">c) No existe un servidor</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo se usa en LAN</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál de las siguientes es una ventaja de la arquitectura cliente-servidor?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) No requiere hosting</button></li>
+                <li><button class="opt-btn" data-opt="b">b) No hay servidor que mantener</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Control centralizado, útil para prevención de trampas, con persistencia del mundo y escalabilidad</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Es la más fácil de hackear</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál es una desventaja de la arquitectura cliente-servidor?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) No tiene persistencia del mundo</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Requiere hosting potente y puede haber mayor latencia si el servidor está lejos</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Es vulnerable a trampas</button></li>
+                <li><button class="opt-btn" data-opt="d">d) No escala</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Peer-to-Peer (P2P)</h2>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>En un sistema peer-to-peer:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Todos los agentes están en el mismo nivel jerárquico, sin servidor central</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Existe un servidor central obligatorio</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo funciona en línea</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Cada cliente necesita un administrador dedicado</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="d" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál de las siguientes NO es una ventaja de P2P?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) No es necesario invertir en servidores específicos</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Fácil de implementar para juegos pequeños</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Menor latencia en redes locales</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Alta escalabilidad para miles de usuarios</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Las principales desventajas de P2P incluyen:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Requiere mucha inversión en hosting</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Vulnerable a trampas por falta de autoridad central y difícil sincronización con muchos usuarios</button></li>
+                <li><button class="opt-btn" data-opt="c">c) No se puede usar en LAN</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Solo funciona con 2 jugadores</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="vf" data-correct="true" data-points="1">
+            <div class="q-text"><span class="tipo vf">V/F</span>En P2P no hay dependencia de un sistema central, lo que evita problemas de conexiones y cuellos de botella.</div>
+            <button class="vf-btn" data-vf="true">Verdadero</button>
+            <button class="vf-btn" data-vf="false">Falso</button>
+            <div class="feedback"></div>
+        </div>
+
+        <h2>Modelo híbrido (Cliente-Servidor con replicación distribuida)</h2>
+
+        <div class="question" data-type="mc" data-correct="c" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>El modelo híbrido de cliente-servidor con replicación distribuida:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Elimina el servidor central</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Solo usa conexiones entre pares</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Combina clientes, servidores y peers, donde el servidor conserva autoridad pero algunos cálculos se delegan a los clientes</button></li>
+                <li><button class="opt-btn" data-opt="d">d) No necesita base de datos</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>Una ventaja del modelo híbrido es:</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Elimina la necesidad de red</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Reducción de carga en el servidor y mejor experiencia en tiempo real</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Garantiza cero latencia</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Escala infinitamente sin problemas</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="a" data-points="2">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál es una desventaja del modelo híbrido?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Requiere mecanismos de reconciliación como rollback e interpolación, y posibles inconsistencias si hay pérdida de paquetes</button></li>
+                <li><button class="opt-btn" data-opt="b">b) No permite usar UDP</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Solo funciona con 1 jugador</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Requiere únicamente TCP</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="b" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>¿Qué modelo es vulnerable a trampas porque no hay autoridad central?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Cliente-Servidor</button></li>
+                <li><button class="opt-btn" data-opt="b">b) Peer-to-Peer</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Cliente-Servidor con replicación distribuida</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Modelo monolítico</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+        <div class="question" data-type="mc" data-correct="d" data-points="3">
+            <div class="q-text"><span class="tipo">MC</span>¿Cuál de estas arquitecturas es la más adecuada para un MMORPG con miles de jugadores simultáneos?</div>
+            <ul class="options">
+                <li><button class="opt-btn" data-opt="a">a) Peer-to-peer puro</button></li>
+                <li><button class="opt-btn" data-opt="b">b) P2P sin servidor dedicado</button></li>
+                <li><button class="opt-btn" data-opt="c">c) Una consola local</button></li>
+                <li><button class="opt-btn" data-opt="d">d) Cliente-Servidor con segmentación de mundo</button></li>
+            </ul>
+            <div class="feedback"></div>
+        </div>
+
+
+        <div class="final-result" id="finalResult">
+            <h3>Resultado final del Bloque 4 - Arquitecturas</h3>
+            <div class="big" id="finalScore"></div>
+            <p id="finalMsg"></p>
+            <button class="reset-btn" onclick="location.reload()">Reintentar bloque</button>
+        </div>
+
+        <p style="margin-top:2rem;">
+            <a href="bloque3-programacion.html" class="nav">← Anterior: Bloque 3</a> ·
+            <a href="bloque5-persistentes.html" class="nav">→ Siguiente: Bloque 5 - Juegos persistentes</a>
+        </p>
+    </div>
+    <script src="../../assets/quiz.js"></script>
+</body>
+</html>
