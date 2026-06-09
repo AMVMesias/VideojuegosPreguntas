@@ -5,25 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo de Videojuegos - Estudio</title>
     <link rel="stylesheet" href="2do-parcial/assets/quiz.css">
+    <style>
+        .examen-selector {
+            display: flex;
+            gap: 1rem;
+            margin: 1.5rem 0 0.5rem;
+            flex-wrap: wrap;
+        }
+        .examen-tab {
+            flex: 1;
+            min-width: 220px;
+            padding: 1rem 1.2rem;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: var(--panel);
+            color: var(--text);
+            text-align: left;
+            cursor: pointer;
+            transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+        }
+        .examen-tab:hover {
+            transform: translateY(-1px);
+            border-color: rgba(79, 209, 197, 0.65);
+            background: var(--panel-strong);
+        }
+        .examen-tab.active {
+            border-color: var(--accent-2);
+            background: var(--panel-strong);
+        }
+        .examen-tab .label {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: #061016;
+            background: var(--accent-2);
+            padding: 0.2rem 0.55rem;
+            border-radius: 999px;
+            margin-bottom: 0.5rem;
+        }
+        .examen-tab h3 {
+            margin: 0 0 0.3rem;
+        }
+        .examen-tab p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+        .examen-panel { display: none; }
+        .examen-panel.active { display: block; }
+    </style>
 </head>
 <body>
-    <div class="home-ambient" aria-hidden="true">
-        <span class="ambient-track track-1"></span>
-        <span class="ambient-track track-2"></span>
-        <span class="ambient-track track-3"></span>
-        <span class="ambient-node node-1"></span>
-        <span class="ambient-node node-2"></span>
-        <span class="ambient-node node-3"></span>
-        <span class="ambient-node node-4"></span>
-        <span class="ambient-panel panel-1"></span>
-        <span class="ambient-panel panel-2"></span>
-    </div>
     <main class="page-shell">
         <section class="hero">
             <div>
                 <span class="eyebrow">Estudio</span>
                 <h1>Desarrollo de Videojuegos</h1>
-                <p class="subtitle">Centro de estudio por parciales. Cada parcial puede tener su material, bloques de preguntas y navegación propia desde esta única página principal.</p>
+                <p class="subtitle">Centro de estudio por parciales. Cada parcial puede tener varios exámenes o pruebas; elegí cuál querés practicar desde esta única página principal.</p>
                 <div class="top-actions">
                     <a class="button primary" href="#parcial-2">Practicar 2do parcial</a>
                     <a class="button" href="#parciales">Ver parciales</a>
@@ -35,7 +74,7 @@
             <div class="section-head">
                 <div>
                     <h2>Parciales</h2>
-                    <p class="muted">Entrada general para crecer sin cambiar el archivo principal de GitHub Pages.</p>
+                    <p class="muted">Cada parcial puede tener uno o varios exámenes. Entrá al parcial y elegí la prueba que querés practicar.</p>
                 </div>
             </div>
 
@@ -43,7 +82,7 @@
                 <a class="card" href="#parcial-2">
                     <span class="badge">Disponible</span>
                     <h3>Segundo parcial</h3>
-                    <p>Clase 04: videojuego a usuario, interfaz, sonido y feedback. Preguntas actualizadas al PDF nuevo de 80 páginas.</p>
+                    <p>Dos exámenes disponibles: Clase 04 (interfaz, sonido, feedback) y Unidad 2 (juegos en red). Elegí cuál practicar.</p>
                 </a>
                 <a class="card" href="#parcial-3">
                     <span class="badge">Preparado</span>
@@ -57,57 +96,127 @@
             <div class="section-head">
                 <div>
                     <h2>Segundo parcial</h2>
-                    <p class="muted">Preguntas basadas en Clase 04. Solo selección: multiple choice y verdadero/falso.</p>
+                    <p class="muted">Elegí el examen o prueba que querés practicar.</p>
                 </div>
-                <a class="button" href="2do-parcial/material/dvj-clase04-Videojuego-jugador-Interfaz_80paginas.md">Abrir material</a>
             </div>
 
-            <div class="bloques-grid">
-                <a href="2do-parcial/preguntas/clase04-interfaz/bloque1-videojuego-usuario.html" class="bloque-card">
-                    <span class="badge">Bloque 1</span>
-                    <h3>Videojuego a usuario</h3>
-                    <p>Pantalla, canales de comunicación y elementos visuales principales.</p>
-                </a>
-                <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-1-introduccion.html" class="bloque-card">
-                    <span class="badge">Bloque 2.1</span>
-                    <h3>Interfaz y planificación</h3>
-                    <p>Aspectos de la interfaz, preguntas de diseño y diagramas de flujo.</p>
-                </a>
-                <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-2-hud.html" class="bloque-card">
-                    <span class="badge">Bloque 2.2</span>
-                    <h3>HUD</h3>
-                    <p>Heads-Up Display, información necesaria y organización en pantalla.</p>
-                </a>
-                <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-3-principios.html" class="bloque-card">
-                    <span class="badge">Bloque 2.3</span>
-                    <h3>Principios básicos</h3>
-                    <p>Punto de atención, color, balance, movimiento visual, intersecciones y texto.</p>
-                </a>
-                <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-4-controles.html" class="bloque-card">
-                    <span class="badge">Bloque 2.4</span>
-                    <h3>Controles</h3>
-                    <p>Sliders, toggles, radio buttons, listas e ingreso de texto.</p>
-                </a>
-                <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-5-patrones.html" class="bloque-card">
-                    <span class="badge">Bloque 2.5</span>
-                    <h3>Patrones de usabilidad</h3>
-                    <p>Shield, State, cancelación, magnetismo, Focus y Progress.</p>
-                </a>
-                <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-6-gestalt.html" class="bloque-card">
-                    <span class="badge">Bloque 2.6</span>
-                    <h3>Diseño gráfico y Gestalt</h3>
-                    <p>Formas, color, percepción y leyes de la Gestalt.</p>
-                </a>
-                <a href="2do-parcial/preguntas/clase04-interfaz/bloque3-sonido.html" class="bloque-card">
-                    <span class="badge">Bloque 3</span>
-                    <h3>Sonido</h3>
-                    <p>Tipos de sonido, importancia y buenas prácticas.</p>
-                </a>
-                <a href="2do-parcial/preguntas/clase04-interfaz/bloque4-feedback.html" class="bloque-card">
-                    <span class="badge">Bloque 4</span>
-                    <h3>Feedback</h3>
-                    <p>Tipos, características y razones por las que mejora la jugabilidad.</p>
-                </a>
+            <div class="examen-selector" role="tablist">
+                <button class="examen-tab active" data-target="examen-clase04" role="tab" aria-selected="true">
+                    <span class="label">Examen 1</span>
+                    <h3>Clase 04: Videojuego a usuario</h3>
+                    <p>Interfaz, sonido, feedback y diseño gráfico. Material de 80 páginas.</p>
+                </button>
+                <button class="examen-tab" data-target="examen-unidad2" role="tab" aria-selected="false">
+                    <span class="label">Examen 2</span>
+                    <h3>Unidad 2: Juegos en red</h3>
+                    <p>TCP/IP, programación, arquitecturas, persistencia y herramientas. Material de 64 páginas.</p>
+                </button>
+            </div>
+
+            <div class="examen-panel active" id="examen-clase04" role="tabpanel">
+                <div class="section-head" style="margin-top:1.5rem;">
+                    <div>
+                        <h2>Clase 04 - Videojuego a usuario</h2>
+                        <p class="muted">Preguntas basadas en Clase 04. Solo selección: multiple choice y verdadero/falso.</p>
+                    </div>
+                    <a class="button" href="2do-parcial/material/dvj-clase04-Videojuego-jugador-Interfaz_80paginas.md">Abrir material</a>
+                </div>
+
+                <div class="bloques-grid">
+                    <a href="2do-parcial/preguntas/clase04-interfaz/bloque1-videojuego-usuario.html" class="bloque-card">
+                        <span class="badge">Bloque 1</span>
+                        <h3>Videojuego a usuario</h3>
+                        <p>Pantalla, canales de comunicación y elementos visuales principales.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-1-introduccion.html" class="bloque-card">
+                        <span class="badge">Bloque 2.1</span>
+                        <h3>Interfaz y planificación</h3>
+                        <p>Aspectos de la interfaz, preguntas de diseño y diagramas de flujo.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-2-hud.html" class="bloque-card">
+                        <span class="badge">Bloque 2.2</span>
+                        <h3>HUD</h3>
+                        <p>Heads-Up Display, información necesaria y organización en pantalla.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-3-principios.html" class="bloque-card">
+                        <span class="badge">Bloque 2.3</span>
+                        <h3>Principios básicos</h3>
+                        <p>Punto de atención, color, balance, movimiento visual, intersecciones y texto.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-4-controles.html" class="bloque-card">
+                        <span class="badge">Bloque 2.4</span>
+                        <h3>Controles</h3>
+                        <p>Sliders, toggles, radio buttons, listas e ingreso de texto.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-5-patrones.html" class="bloque-card">
+                        <span class="badge">Bloque 2.5</span>
+                        <h3>Patrones de usabilidad</h3>
+                        <p>Shield, State, cancelación, magnetismo, Focus y Progress.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/clase04-interfaz/bloque2-6-gestalt.html" class="bloque-card">
+                        <span class="badge">Bloque 2.6</span>
+                        <h3>Diseño gráfico y Gestalt</h3>
+                        <p>Formas, color, percepción y leyes de la Gestalt.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/clase04-interfaz/bloque3-sonido.html" class="bloque-card">
+                        <span class="badge">Bloque 3</span>
+                        <h3>Sonido</h3>
+                        <p>Tipos de sonido, importancia y buenas prácticas.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/clase04-interfaz/bloque4-feedback.html" class="bloque-card">
+                        <span class="badge">Bloque 4</span>
+                        <h3>Feedback</h3>
+                        <p>Tipos, características y razones por las que mejora la jugabilidad.</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="examen-panel" id="examen-unidad2" role="tabpanel">
+                <div class="section-head" style="margin-top:1.5rem;">
+                    <div>
+                        <h2>Unidad 2 - Juegos en red</h2>
+                        <p class="muted">Preguntas sobre redes, protocolos, arquitecturas y herramientas. Material de 64 páginas.</p>
+                    </div>
+                    <a class="button" href="2do-parcial/material/Unidad_2_Juegos_en_red.md">Abrir material</a>
+                </div>
+
+                <div class="bloques-grid">
+                    <a href="2do-parcial/preguntas/unidad2-juegos-red/bloque1-historia.html" class="bloque-card">
+                        <span class="badge">Bloque 1</span>
+                        <h3>Historia de los juegos en red</h3>
+                        <p>MUD, Doom, Warcraft, MMORPG y subscripciones.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/unidad2-juegos-red/bloque2-protocolos.html" class="bloque-card">
+                        <span class="badge">Bloque 2</span>
+                        <h3>TCP/IP y protocolos</h3>
+                        <p>Modelo TCP/IP, TCP, UDP, R-UDP y comparación en videojuegos.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/unidad2-juegos-red/bloque3-programacion.html" class="bloque-card">
+                        <span class="badge">Bloque 3</span>
+                        <h3>Programación de red</h3>
+                        <p>Sockets, WebSocket, WebRTC, ENet y comparación general.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/unidad2-juegos-red/bloque4-arquitecturas.html" class="bloque-card">
+                        <span class="badge">Bloque 4</span>
+                        <h3>Arquitecturas</h3>
+                        <p>Cliente-Servidor, Peer-to-Peer y modelo híbrido.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/unidad2-juegos-red/bloque5-persistentes.html" class="bloque-card">
+                        <span class="badge">Bloque 5</span>
+                        <h3>Juegos persistentes</h3>
+                        <p>PONG, segmentación de mundo, reinos y subdivisión espacial.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/unidad2-juegos-red/bloque6-tecnicas.html" class="bloque-card">
+                        <span class="badge">Bloque 6</span>
+                        <h3>Técnicas avanzadas</h3>
+                        <p>Servidor autoritativo, predicción, lag compensation, rollback.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/unidad2-juegos-red/bloque7-herramientas.html" class="bloque-card">
+                        <span class="badge">Bloque 7</span>
+                        <h3>Herramientas Unity y Godot</h3>
+                        <p>Netcode, Mirror, Photon, ENet, MultiplayerSynchronizer y comparación.</p>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -118,6 +227,11 @@
                     <span class="badge">Markdown</span>
                     <h3>Clase 04 - Videojuego a usuario</h3>
                     <p>Archivo base actual de 80 páginas usado para ordenar y revisar las preguntas.</p>
+                </a>
+                <a class="card" href="2do-parcial/material/Unidad_2_Juegos_en_red.md">
+                    <span class="badge">Markdown</span>
+                    <h3>Unidad 2 - Juegos en red</h3>
+                    <p>Archivo base de 64 páginas con temas de redes, protocolos y multijugador.</p>
                 </a>
             </div>
         </section>
@@ -144,5 +258,28 @@
             </div>
         </section>
     </main>
+
+    <script>
+        (() => {
+            const tabs = document.querySelectorAll(".examen-tab");
+            const panels = document.querySelectorAll(".examen-panel");
+
+            tabs.forEach((tab) => {
+                tab.addEventListener("click", () => {
+                    const target = tab.dataset.target;
+
+                    tabs.forEach((t) => {
+                        const isActive = t === tab;
+                        t.classList.toggle("active", isActive);
+                        t.setAttribute("aria-selected", isActive ? "true" : "false");
+                    });
+
+                    panels.forEach((p) => {
+                        p.classList.toggle("active", p.id === target);
+                    });
+                });
+            });
+        })();
+    </script>
 </body>
 </html>
