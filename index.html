@@ -4,18 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo de Videojuegos - Estudio</title>
-    <link rel="stylesheet" href="2do-parcial/assets/quiz.css?v=7">
+    <link rel="stylesheet" href="2do-parcial/assets/quiz.css?v=9">
     <style>
         .examen-selector {
-            display: flex;
-            gap: 1rem;
-            margin: 1.5rem 0 0.5rem;
-            flex-wrap: wrap;
+            position: sticky;
+            top: 4.8rem;
+            z-index: 12;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 0.75rem;
+            margin: 1.5rem 0 0.85rem;
+            padding: 0.65rem;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 8px;
+            background: rgba(8, 13, 27, 0.78);
+            box-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+            backdrop-filter: blur(18px);
         }
         .examen-tab {
-            flex: 1;
-            min-width: 220px;
-            padding: 1rem 1.2rem;
+            min-width: 0;
+            padding: 0.95rem 1rem;
             border: 1px solid var(--line);
             border-radius: 8px;
             background: var(--panel);
@@ -32,6 +40,7 @@
         .examen-tab.active {
             border-color: var(--accent-2);
             background: var(--panel-strong);
+            box-shadow: inset 0 0 0 1px rgba(79, 209, 197, 0.18), 0 14px 34px rgba(79, 209, 197, 0.1);
         }
         .examen-tab .label {
             display: inline-block;
@@ -46,11 +55,23 @@
         }
         .examen-tab h3 {
             margin: 0 0 0.3rem;
+            line-height: 1.2;
         }
         .examen-tab p {
             margin: 0;
             color: var(--muted);
             font-size: 0.9rem;
+            line-height: 1.35;
+        }
+        @media (max-width: 760px) {
+            .examen-selector {
+                top: 8.35rem;
+                grid-template-columns: 1fr;
+                padding: 0.5rem;
+            }
+            .examen-tab {
+                padding: 0.85rem;
+            }
         }
         .examen-panel { display: none; }
         .examen-panel.active { display: block; }
@@ -165,7 +186,7 @@
         }
     </style>
 </head>
-<body>
+<body id="top">
     <div class="home-ambient" aria-hidden="true">
         <span class="ambient-track track-1"></span>
         <span class="ambient-track track-2"></span>
@@ -183,16 +204,44 @@
         <span class="ambient-panel panel-1"></span>
         <span class="ambient-panel panel-2"></span>
         <span class="ambient-panel panel-3"></span>
+        <span class="ambient-panel panel-4"></span>
+        <span class="ambient-beam beam-1"></span>
+        <span class="ambient-beam beam-2"></span>
+        <span class="ambient-beam beam-3"></span>
+        <span class="ambient-token token-1"></span>
+        <span class="ambient-token token-2"></span>
+        <span class="ambient-token token-3"></span>
+        <span class="ambient-token token-4"></span>
+        <span class="ambient-orbit orbit-1"></span>
+        <span class="ambient-orbit orbit-2"></span>
     </div>
+    <header class="site-nav" aria-label="Navegacion principal">
+        <a class="brand-mark" href="#top">
+            <span>DVJ</span>
+            <strong>Estudio</strong>
+        </a>
+        <nav class="nav-links" aria-label="Secciones">
+            <a href="#parciales">Parciales</a>
+            <a href="#parcial-2">2do parcial</a>
+            <a href="#materiales">Materiales</a>
+            <a href="#parcial-3">3er parcial</a>
+        </nav>
+        <a class="nav-cta" href="#parcial-2">Practicar</a>
+    </header>
     <main class="page-shell">
-        <section class="hero">
-            <div>
+        <section class="hero landing-hero">
+            <div class="hero-copy">
                 <span class="eyebrow">Estudio</span>
                 <h1>Desarrollo de Videojuegos</h1>
-                <p class="subtitle">Centro de estudio por parciales. Cada parcial puede tener varios exámenes o pruebas; elegí cuál querés practicar desde esta única página principal.</p>
+                <p class="subtitle">Un solo inicio para practicar por parciales, entrar al material correcto y responder solo preguntas de elegir. La estructura queda lista para crecer con el segundo y tercer parcial.</p>
                 <div class="top-actions">
-                    <a class="button primary" href="#parcial-2">Practicar 2do parcial</a>
-                    <a class="button" href="#parciales">Ver parciales</a>
+                    <a class="button primary" href="#parcial-2">Practicar ahora</a>
+                    <a class="button" href="#materiales">Abrir materiales</a>
+                </div>
+                <div class="hero-kpis" aria-label="Resumen del sitio">
+                    <span><strong>3</strong> examenes activos</span>
+                    <span><strong>100%</strong> seleccion</span>
+                    <span><strong>2P/3P</strong> escalable</span>
                 </div>
             </div>
         </section>
@@ -249,7 +298,7 @@
                 <div class="section-head" style="margin-top:1.5rem;">
                     <div>
                         <h2>Clase 04 - Videojuego a usuario</h2>
-                        <p class="muted">Preguntas basadas en Clase 04. Solo selección: multiple choice y verdadero/falso.</p>
+                        <p class="muted">Preguntas basadas en Clase 04. Solo selección, sin respuestas escritas.</p>
                     </div>
                     <a class="button" href="2do-parcial/material/dvj-clase04-Videojuego-jugador-Interfaz_80paginas.md">Abrir material</a>
                 </div>
@@ -402,7 +451,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="materiales">
             <h2>Material del segundo parcial</h2>
             <div class="grid">
                 <a class="card" href="2do-parcial/material/dvj-clase04-Videojuego-jugador-Interfaz_80paginas.md">
