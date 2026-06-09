@@ -5,6 +5,7 @@
     const finalResult = document.getElementById("finalResult");
     const finalScore = document.getElementById("finalScore");
     const finalMsg = document.getElementById("finalMsg");
+    const scoreBar = document.querySelector(".score-bar");
 
     let score = 0;
     let answered = 0;
@@ -77,6 +78,8 @@
             scoreEl.textContent = String(score);
         }
 
+        updateProgress();
+
         if (feedback) {
             feedback.className = `feedback ${isCorrect ? "ok" : "bad"}`;
             feedback.innerHTML = isCorrect
@@ -86,6 +89,13 @@
         }
 
         checkFinal();
+    }
+
+    function updateProgress() {
+        if (!scoreBar || questions.length === 0) return;
+
+        const percent = Math.round((answered / questions.length) * 100);
+        scoreBar.style.setProperty("--progress", `${percent}%`);
     }
 
     function checkFinal() {
