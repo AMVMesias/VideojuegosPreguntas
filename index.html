@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo de Videojuegos - Estudio</title>
-    <link rel="stylesheet" href="2do-parcial/assets/quiz.css?v=4">
+    <link rel="stylesheet" href="2do-parcial/assets/quiz.css?v=7">
     <style>
         .examen-selector {
             display: flex;
@@ -54,6 +54,115 @@
         }
         .examen-panel { display: none; }
         .examen-panel.active { display: block; }
+
+        .examen-tab[data-target="examen-unidad2"] {
+            border-color: rgba(57, 255, 188, 0.34);
+            background: linear-gradient(135deg, rgba(5, 29, 36, 0.92), rgba(20, 16, 48, 0.86));
+            box-shadow: inset 0 0 28px rgba(57, 255, 188, 0.05);
+        }
+        .examen-tab[data-target="examen-unidad2"]:hover,
+        .examen-tab[data-target="examen-unidad2"].active {
+            border-color: #39ffbc;
+            background: linear-gradient(135deg, rgba(7, 52, 55, 0.96), rgba(37, 18, 68, 0.92));
+            box-shadow: 0 18px 42px rgba(0, 0, 0, 0.36), 0 0 24px rgba(57, 255, 188, 0.16);
+        }
+        .examen-tab[data-target="examen-unidad2"] .label {
+            color: #021416;
+            background: linear-gradient(135deg, #39ffbc, #2bd9ff);
+        }
+        .examen-tab[data-target="examen-unidad2"] h3 {
+            color: #efffff;
+        }
+        .examen-tab[data-target="examen-unidad2"] p {
+            color: #a9e8dd;
+        }
+
+        /* === TEMA MORADO / DORADO para Examen 3 (Jugador a Videojuego) === */
+        .tema-jugador {
+            --bg: #0a0a1a;
+            --panel: rgba(180, 132, 255, 0.07);
+            --panel-strong: rgba(180, 132, 255, 0.12);
+            --line: rgba(180, 132, 255, 0.18);
+            --text: #f4f7fb;
+            --muted: #b4a8d4;
+            --accent: #b484ff;
+            --accent-2: #ffd166;
+            --accent-3: #06d6a0;
+            --shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+        }
+        .tema-jugador .examen-tab {
+            background: rgba(180, 132, 255, 0.07);
+            border-color: rgba(180, 132, 255, 0.18);
+        }
+        .tema-jugador .examen-tab:hover {
+            border-color: rgba(180, 132, 255, 0.65);
+            background: rgba(180, 132, 255, 0.12);
+        }
+        .tema-jugador .examen-tab.active {
+            border-color: var(--accent-2);
+            background: rgba(180, 132, 255, 0.15);
+        }
+        .tema-jugador .examen-tab .label {
+            background: linear-gradient(135deg, #b484ff 0%, #ffd166 100%);
+        }
+        .tema-jugador .examen-tab p {
+            color: var(--muted);
+        }
+        .tema-jugador h2 {
+            background: linear-gradient(135deg, #b484ff 0%, #ffd166 50%, #06d6a0 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            border-bottom-color: rgba(180, 132, 255, 0.25);
+        }
+        .tema-jugador .bloque-card {
+            background: rgba(180, 132, 255, 0.05);
+            border-color: rgba(180, 132, 255, 0.18);
+        }
+        .tema-jugador .bloque-card:hover {
+            border-color: var(--accent);
+            background: rgba(180, 132, 255, 0.12);
+            transform: translateY(-2px);
+        }
+        .tema-jugador .bloque-card .badge {
+            background: linear-gradient(135deg, #b484ff 0%, #ffd166 100%);
+            color: #0a0a1a;
+        }
+        .tema-jugador .bloque-card p {
+            color: var(--muted);
+        }
+        .tema-jugador .button {
+            background: rgba(180, 132, 255, 0.07);
+            border-color: rgba(180, 132, 255, 0.18);
+        }
+        .tema-jugador .button:hover {
+            border-color: var(--accent-2);
+            background: rgba(180, 132, 255, 0.12);
+        }
+        .tema-jugador .badge {
+            background: linear-gradient(135deg, #b484ff 0%, #ffd166 100%);
+            color: #0a0a1a;
+        }
+        .tema-jugador .card {
+            background: rgba(180, 132, 255, 0.05);
+            border-color: rgba(180, 132, 255, 0.18);
+        }
+        .tema-jugador .card .badge {
+            background: linear-gradient(135deg, #b484ff 0%, #ffd166 100%);
+            color: #0a0a1a;
+        }
+        .tema-jugador .muted,
+        .tema-jugador .card p {
+            color: var(--muted);
+        }
+        .tema-jugador .back {
+            background: rgba(180, 132, 255, 0.07);
+            border-color: rgba(180, 132, 255, 0.18);
+        }
+        .tema-jugador .back:hover {
+            border-color: var(--accent-2);
+            background: rgba(180, 132, 255, 0.12);
+        }
     </style>
 </head>
 <body>
@@ -100,7 +209,7 @@
                 <a class="card" href="#parcial-2">
                     <span class="badge">Disponible</span>
                     <h3>Segundo parcial</h3>
-                    <p>Dos exámenes disponibles: Clase 04 (interfaz, sonido, feedback) y Unidad 2 (juegos en red). Elegí cuál practicar.</p>
+                    <p>Tres exámenes disponibles: Clase 04, Unidad 2 (juegos en red) y Unidad 2 (jugador a videojuego). Elegí cuál practicar.</p>
                 </a>
                 <a class="card" href="#parcial-3">
                     <span class="badge">Preparado</span>
@@ -114,7 +223,7 @@
             <div class="section-head">
                 <div>
                     <h2>Segundo parcial</h2>
-                    <p class="muted">Elegí el examen o prueba que querés practicar.</p>
+                    <p class="muted">Elegí el examen o prueba que querés practicar. Cada examen tiene su propio material y estilo visual.</p>
                 </div>
             </div>
 
@@ -128,6 +237,11 @@
                     <span class="label">Examen 2</span>
                     <h3>Unidad 2: Juegos en red</h3>
                     <p>TCP/IP, programación, arquitecturas, persistencia y herramientas. Material de 64 páginas.</p>
+                </button>
+                <button class="examen-tab" data-target="examen-jugador" role="tab" aria-selected="false">
+                    <span class="label">Examen 3</span>
+                    <h3>Unidad 2: Jugador a Videojuego</h3>
+                    <p>Interacción, dispositivos de entrada, captura, interpretación y feedback. Material de 27 páginas. <strong>Tema morado/dorado.</strong></p>
                 </button>
             </div>
 
@@ -189,8 +303,20 @@
                 </div>
             </div>
 
-            <div class="examen-panel" id="examen-unidad2" role="tabpanel">
-                <div class="section-head" style="margin-top:1.5rem;">
+            <div class="examen-panel network-panel" id="examen-unidad2" role="tabpanel">
+                <div class="network-showcase" aria-hidden="true">
+                    <span class="net-dot d1"></span>
+                    <span class="net-dot d2"></span>
+                    <span class="net-dot d3"></span>
+                    <span class="net-dot d4"></span>
+                    <span class="net-link l1"></span>
+                    <span class="net-link l2"></span>
+                    <span class="net-link l3"></span>
+                    <span class="net-packet p1"></span>
+                    <span class="net-packet p2"></span>
+                </div>
+
+                <div class="section-head network-head" style="margin-top:1.5rem;">
                     <div>
                         <h2>Unidad 2 - Juegos en red</h2>
                         <p class="muted">Preguntas sobre redes, protocolos, arquitecturas y herramientas. Material de 64 páginas.</p>
@@ -236,6 +362,44 @@
                     </a>
                 </div>
             </div>
+
+            <div class="examen-panel tema-jugador" id="examen-jugador" role="tabpanel">
+                <div class="section-head" style="margin-top:1.5rem;">
+                    <div>
+                        <h2 style="margin:0;">Unidad 2 - Jugador a Videojuego</h2>
+                        <p class="muted" style="color:#b4a8d4;">Interacción usuario-videojuego, dispositivos de entrada, captura, interpretación y feedback. Material de 27 páginas. <strong style="color:#ffd166;">Tema visual morado / dorado / verde esmeralda.</strong></p>
+                    </div>
+                    <a class="button" href="2do-parcial/material/Unidad_2_Jugador_a_Videojuego.md">Abrir material</a>
+                </div>
+
+                <div class="bloques-grid">
+                    <a href="2do-parcial/preguntas/unidad2-jugador-videojuego/bloque1-interaccion.html" class="bloque-card">
+                        <span class="badge">Bloque 1</span>
+                        <h3>Interacción usuario-videojuego</h3>
+                        <p>Concepto de interacción, historia de los dispositivos y tipos de periféricos.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/unidad2-jugador-videojuego/bloque2-clasificacion.html" class="bloque-card">
+                        <span class="badge">Bloque 2</span>
+                        <h3>Clasificación de entradas</h3>
+                        <p>Entradas de control, datos y sensores; categorías de dispositivos.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/unidad2-jugador-videojuego/bloque3-lectura.html" class="bloque-card">
+                        <span class="badge">Bloque 3</span>
+                        <h3>Lectura y captura de datos</h3>
+                        <p>Polling, interrupciones, buffering, sincronización y proceso de captura.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/unidad2-jugador-videojuego/bloque4-interpretacion.html" class="bloque-card">
+                        <span class="badge">Bloque 4</span>
+                        <h3>Interpretación de la entrada</h3>
+                        <p>Mapeo, configuración, gestión de eventos y sensibilidad.</p>
+                    </a>
+                    <a href="2do-parcial/preguntas/unidad2-jugador-videojuego/bloque5-sistemas.html" class="bloque-card">
+                        <span class="badge">Bloque 5</span>
+                        <h3>Sistemas de interacción y feedback</h3>
+                        <p>GUI, háptico, voz, AR/VR, tipos de interacción y diagrama de 8 pasos.</p>
+                    </a>
+                </div>
+            </div>
         </section>
 
         <section>
@@ -250,6 +414,11 @@
                     <span class="badge">Markdown</span>
                     <h3>Unidad 2 - Juegos en red</h3>
                     <p>Archivo base de 64 páginas con temas de redes, protocolos y multijugador.</p>
+                </a>
+                <a class="card" href="2do-parcial/material/Unidad_2_Jugador_a_Videojuego.md">
+                    <span class="badge">Markdown</span>
+                    <h3>Unidad 2 - Jugador a Videojuego</h3>
+                    <p>Archivo base de 27 páginas sobre dispositivos de entrada, captura, interpretación y feedback.</p>
                 </a>
             </div>
         </section>
